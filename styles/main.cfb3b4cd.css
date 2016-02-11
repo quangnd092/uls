@@ -3279,7 +3279,7 @@ textarea.form-control {
 }
 
 .form-group {
-    margin-bottom: 15px
+    margin-bottom: 26px
 }
 
 .checkbox,
@@ -7369,7 +7369,8 @@ button.close {
     opacity: .5;
     filter: alpha(opacity=50);
     font-size: 20px;
-    background-color: transparent
+    background-color: transparent;
+    display: none!important;
 }
 
 .carousel-control.left {
@@ -15088,7 +15089,7 @@ nav .navbar-nav>li>a {
     font-size: 15px;
     line-height: 1.4;
     background: 0 0!important;
-    padding: 11px 25px
+    padding: 11px 29px
 }
 
 nav .navbar-nav>li:hover {
