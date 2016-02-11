@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Redesign ULS</title>
     <meta name="description" content="">
@@ -16,455 +17,470 @@
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.cfb3b4cd.css">
     <script src="scripts/vendor/modernizr.caa1706e.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <script type="text/javascript">
-             
-    // The following example creates complex markers to indicate beaches near
-    // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
-    // to the base of the flagpole.
+        // The following example creates complex markers to indicate beaches near
+        // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
+        // to the base of the flagpole.
 
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 1,
-        center: {lat: 0, lng: 0}
-      });
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map-canvas'), {
+                zoom: 1,
+                center: {
+                    lat: 0,
+                    lng: 0
+                }
+            });
 
-      setMarkers(map);
-    }
+            setMarkers(map);
+        }
 
-    // Data for the markers consisting of a name, a LatLng and a zIndex for the
-    // order in which these markers should display on top of each other.
-    var beaches = [
+        // Data for the markers consisting of a name, a LatLng and a zIndex for the
+        // order in which these markers should display on top of each other.
+        var beaches = [
       ['Bondi Beach', -10, -50, 3],
       ['Coogee Beach', -20, 30, 2],
       ['Cronulla Beach', -5, 150, 1],
     ];
 
-    function setMarkers(map) {
-      // Adds markers to the map.
+        function setMarkers(map) {
+            // Adds markers to the map.
 
-      // Marker sizes are expressed as a Size of X,Y where the origin of the image
-      // (0,0) is located in the top left of the image.
+            // Marker sizes are expressed as a Size of X,Y where the origin of the image
+            // (0,0) is located in the top left of the image.
 
-      // Origins, anchor positions and coordinates of the marker increase in the X
-      // direction to the right and in the Y direction down.
-      var image = {
-        url: 'images/page/google-icon-black.png',
-      };
-      // Shapes define the clickable region of the icon. The type defines an HTML
-      // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-      // The final coordinate closes the poly by connecting to the first coordinate.
-      // var shape = {
-      //   coords: [1, 1, 1, 20, 18, 20, 18, 1],
-      //   type: 'poly'
-      // };
-      for (var i = 0; i < beaches.length; i++) {
-        var beach = beaches[i];
-        var marker = new google.maps.Marker({
-          position: {lat: beach[1], lng: beach[2]},
-          map: map,
-          icon: image,
-          // shape: shape,
-          title: beach[0],
-          zIndex: beach[3]
-        });
-      }
-    }
-    google.maps.event.addDomListener(window, 'load', initMap);
-</script>
+            // Origins, anchor positions and coordinates of the marker increase in the X
+            // direction to the right and in the Y direction down.
+            var image = {
+                url: 'images/page/google-icon-black.png',
+            };
+            // Shapes define the clickable region of the icon. The type defines an HTML
+            // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+            // The final coordinate closes the poly by connecting to the first coordinate.
+            // var shape = {
+            //   coords: [1, 1, 1, 20, 18, 20, 18, 1],
+            //   type: 'poly'
+            // };
+            for (var i = 0; i < beaches.length; i++) {
+                var beach = beaches[i];
+                var marker = new google.maps.Marker({
+                    position: {
+                        lat: beach[1],
+                        lng: beach[2]
+                    },
+                    map: map,
+                    icon: image,
+                    // shape: shape,
+                    title: beach[0],
+                    zIndex: beach[3]
+                });
+            }
+        }
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+
     <!-- start header block-->
     <header>
-  <div class="container header">
-    <div class="col-xs-6 col-md-6 box-logo">
-      <h1><a href=""><img src="images/page/uls_logo.png" alt="ulslogo"></a></h1>
-    </div>
-    <div class="col-xs-6 col-md-6 text-right box-search">
-      <div class="form-group">
-        <select name="">
-          <option value="">English</option>
-          <option value="">Español</option>
-          <option value="">Francais</option>
-          <option value="">Deutsch</option>
-          <option value="">Portugues</option>
-          <option value="">Italiano</option>
-        </select>
-      </div>
-      <div class="form-group box-option">
-        <input type="text" class="form-control" placeholder="Search...">
-        <button class="btn btn-default">Search</button>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
-</header>
+        <div class="container header">
+            <div class="col-xs-6 col-md-6 box-logo">
+                <h1><a href=""><img src="images/page/uls_logo.png" alt="ulslogo"></a></h1>
+            </div>
+            <div class="col-xs-6 col-md-6 text-right box-search">
+                <div class="form-group">
+                    <select name="" style="display:none">
+                        <option value="">English</option>
+                        <option value="">Español</option>
+                        <option value="">Francais</option>
+                        <option value="">Deutsch</option>
+                        <option value="">Portugues</option>
+                        <option value="">Italiano</option>
+                    </select>
+                </div>
+                <div class="form-group box-option">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="btn btn-default">Search</button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </header>
     <!-- the end header block-->
-    
+
     <!-- start block navibar -->
     <nav class="navbar">
-    <div class="container">
+        <div class="container">
 
-      <!-- start navibar header only display in mobile -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#list-menu" aria-expanded="false">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- logo and button toggle box search -->
-        <a href=""  class="logo visible-xs"><img src="images/page/uls_logo.png" alt="ulslogo"></a>
-        <button type="button" class="navbar-toggle collapsed btn-search" data-toggle="collapse" data-target="#list-option" aria-expanded="false">
-          <i class="fa fa-search"></i>
-        </button>
-        <!-- the end -->
-      </div>
-      <!-- the end -->
-      
-      <!-- start box search display in mobile -->
-      <div class="collapse navbar-collapse" id="list-option">
-        <div class="visible-xs box-search">
-          <div class="box-option">
-            <input type="text" class="form-control" placeholder="Search...">
-            <button class="btn btn-default">Search</button>
-          </div>
+            <!-- start navibar header only display in mobile -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#list-menu" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- logo and button toggle box search -->
+                <a href="" class="logo visible-xs"><img src="images/page/uls_logo.png" alt="ulslogo"></a>
+                <button type="button" class="navbar-toggle collapsed btn-search" data-toggle="collapse" data-target="#list-option" aria-expanded="false">
+                    <i class="fa fa-search"></i>
+                </button>
+                <!-- the end -->
+            </div>
+            <!-- the end -->
+
+            <!-- start box search display in mobile -->
+            <div class="collapse navbar-collapse" id="list-option">
+                <div class="visible-xs box-search">
+                    <div class="box-option">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button class="btn btn-default">Search</button>
+                    </div>
+                </div>
+            </div>
+            <!-- the end -->
+
+            <!-- start list navibar -->
+            <div class="collapse navbar-collapse" id="list-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Building Blocks</a></li>
+                            <li><a href="#">ULS Innovative Technology</a></li>
+                            <li><a href="#">Configure Your ULS Laser System</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Advanced Materials Processing Center</a></li>
+                            <li><a href="#">How to Guides</a></li>
+                            <li><a href="#">Laser Safety</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How to Buy</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Find a representative</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service & Support</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Software Downloads</a></li>
+                            <li><a href="#">User Guides</a></li>
+                            <li><a href="#">Warranty Information</a></li>
+                            <li><a href="#">Service Programs</a></li>
+                            <li><a href="#">Contact Service</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- the end list navibar -->
+
         </div>
-      </div>
-      <!-- the end -->
-      
-      <!-- start list navibar -->
-      <div class="collapse navbar-collapse" id="list-menu">
-        <ul class="nav navbar-nav">
-          <li class="dropdown active">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">History</a></li>
-              <li><a href="#">Newsroom</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Building Blocks</a></li>
-              <li><a href="#">ULS Innovative Technology</a></li>
-              <li><a href="#">Configure Your ULS Laser System</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Advanced Materials Processing Center</a></li>
-              <li><a href="#">How to Guides</a></li>
-              <li><a href="#">Laser Safety</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How to Buy</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Find a representative</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service & Support</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Software Downloads</a></li>
-              <li><a href="#">User Guides</a></li>
-              <li><a href="#">Warranty Information</a></li>
-              <li><a href="#">Service Programs</a></li>
-              <li><a href="#">Contact Service</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <!-- the end list navibar -->
-
-    </div>
-</nav>
+    </nav>
     <!-- the end navibar block -->
-    
+
     <!-- start content block -->
     <div id="content">
-      <!-- start header with background red -->
-      <section class="header-title red">
-  <div class="container">
-    <div class="wrap-title">
-      <h3 class="text-white">Contact Universal Laser Systems</h3>
-      <h5 class="text-white">To speak with a Universal expert, call us or fill out the form below.</h5>
-    </div>
-    <div class="wrap-image">
-      <img src="images/contact/map_opacity.png">
-    </div>
-  </div>
-</section>
-      <!-- the end -->
+        <!-- start header with background red -->
+        <section class="header-title red">
+            <div class="container">
+                <div class="wrap-title">
+                    <h3 class="text-white">Contact Universal Laser Systems</h3>
+                    <h5 class="text-white">To speak with a Universal expert, call us or fill out the form below.</h5>
+                </div>
+                <div class="wrap-image">
+                    <img src="images/contact/map_opacity.png">
+                </div>
+            </div>
+        </section>
+        <!-- the end -->
 
-      <!-- start box load google map -->
-      <section class="top-map">
-<div class="wrap-content container">
-  <div id="map-canvas" style="height: 288px;"></div>
-</div>
-</section>
-      <!-- the end -->
-      <!-- start box list location -->
-      <section class="list-location">
-  <div class="container">
-    <article class="col-md-4 location">
-      <img src="images/page/google-icon.png">
-      <h4>World Headquarters</h4>
-      <p>7845 East Paradise Lane</p>
-      <p>Scottsdale, AZ 85260</p>
-      <p>(800) 859-7033 U.S</p>
-      <p>(480)483-1214 Global</p>
+        <!-- start box load google map -->
+        <section class="top-map">
+            <div class="wrap-content container">
+                <div id="map-canvas" style="height: 288px;"></div>
+            </div>
+        </section>
+        <!-- the end -->
+        <!-- start box list location -->
+        <section class="list-location">
+            <div class="container">
+                <article class="col-md-4 location">
+                    <img src="images/page/google-icon.png">
+                    <h4>World Headquarters</h4>
+                    <p>7845 East Paradise Lane</p>
+                    <p>Scottsdale, AZ 85260</p>
+                    <p>(800) 859-7033 U.S</p>
+                    <p>(480)483-1214 Global</p>
 
-    </article>
-    <article class="col-md-4 location">
-      <img src="images/page/google-icon.png">
-      <h4>Europe</h4>
-      <p>Lerchenfelder Gürtel 43</p>
-      <p>1160 Vienna, Austria </p>
-      <p>+43 1-402-22-50 Europe</p>
-    </article>
-    <article class="col-md-4 location">
-      <img src="images/page/google-icon.png">
-      <h4>Japan</h4>
-      <p>The Yokohama Landmark </p>
-      <p>Tower 220-8115</p>
-      <p>Yokohama, Japan</p>
-      <p>+81 45-224-2279 Japan</p>
-    </article>
-    <div class="clearfix"></div>
-  </div>  
-</section>
-      <!-- the end -->
-      <!-- start box form -->
-      <section class="form wrap-main-content container">
-    <div class="contact-form col-lg-8 col-md-8 col-sm-8">
-      <form action="">
-        <div class="wrap-box-contact">
-          <div class="top-title">
-            <h5 class="text-white">
+                </article>
+                <article class="col-md-4 location">
+                    <img src="images/page/google-icon.png">
+                    <h4>Europe</h4>
+                    <p>Lerchenfelder Gürtel 43</p>
+                    <p>1160 Vienna, Austria </p>
+                    <p>+43 1-402-22-50 Europe</p>
+                </article>
+                <article class="col-md-4 location">
+                    <img src="images/page/google-icon.png">
+                    <h4>Japan</h4>
+                    <p>The Yokohama Landmark </p>
+                    <p>Tower 220-8115</p>
+                    <p>Yokohama, Japan</p>
+                    <p>+81 45-224-2279 Japan</p>
+                </article>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+        <!-- the end -->
+        <!-- start box form -->
+        <section class="form wrap-main-content container">
+            <div class="contact-form col-lg-8 col-md-8 col-sm-8">
+                <form action="">
+                    <div class="wrap-box-contact">
+                        <div class="top-title">
+                            <h5 class="text-white">
               CONTACT INFORMATION
             </h5>
-          </div>
+                        </div>
 
-          <div class="main-box">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="form-group">
-                <label for="exampleInputEmail1">First Name <span class="key">*</span></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email <span class="key">*</span></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Country</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Telephone</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
+                        <div class="main-box">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">First Name <span class="key">*</span></label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email <span class="key">*</span></label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Country</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Telephone</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Last Name <span class="key">*</span></label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">City <span class="key">*</span></label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">State/Province</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Company Name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Please mail me product information.
+                                </label>
+                            </div>
+
+                            <div class="wrap-question-comment">
+                                <label class="title-text-area" for="">Questions or Comments:</label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="action-button">
+                                <button class="btn btn-red btn-large">
+                                    SUBMIT
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Last Name <span class="key">*</span></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">City <span class="key">*</span></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">State/Province</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Company Name</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-              </div>
+            <div class="privacy-policy col-lg-4 col-md-4 col-sm-4 padding-none">
+                <div class="wrap-box-contact">
+                    <div class="top-title">
+                        <h5 class="text-white">
+              Privacy Policy
+            </h5>
+                    </div>
+
+                    <div class="main-box">
+
+                    </div>
+                </div>
             </div>
 
             <div class="clearfix"></div>
-
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Please mail me product information.
-              </label>
-            </div>
-
-            <div class="wrap-question-comment">
-              <label class="title-text-area" for="">Questions or Comments:</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-
-            <div class="action-button">
-              <button class="btn btn-red btn-large">
-                SUBMIT
-              </button>
-            </div>
-
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <div class="privacy-policy col-lg-4 col-md-4 col-sm-4 padding-none">
-      <div class="wrap-box-contact">
-          <div class="top-title">
-            <h5 class="text-white">
-              Privacy Policy
-            </h5>
-          </div>
-
-          <div class="main-box">
-
-          </div>
-        </div>
-    </div>
-
-    <div class="clearfix"></div>
-</section>
-      <!-- the end -->
+        </section>
+        <!-- the end -->
     </div>
     <!-- the end block content -->
-    
+
     <!-- start footer block -->
-   <footer>
-    <!-- start footer navigation block -->
-    <section class="footer-navigation top">
-      <div class="container">
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation"> 
-          <ul class="list-unstyled">
-            <li><strong><a href="">About Us</a></strong></li>
-            <li><a href="">History</a></li>
-            <li><a href="">Newsroom</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">Products</a></strong> </li>
-            <li><a href="">Building Blocks</a></li>
-            <li><a href="">ULS Innovative <span>Technology</span></a></li>
-            <li> <a href="">Configure Your <span>ULS Laser System</span></a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">Resources</a></strong></li>
-            <li><a href="">Advanced Materials <span>Processing Center</span></a></li>
-            <li><a href="">How to Guides</a></li>
-            <li><a href="">Laser Safety</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">How to Buy</a></strong></li>
-            <li><a href="">Find a representative</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">Services & Support</a></strong></li>
-            <li><a href="">Software Downloads</a></li>
-            <li><a href="">User Guides</a></li>
-            <li><a href="">Warranty Information</a></li>
-            <li><a href="">Service Programs</a></li>
-            <li><a href="">Contact Service</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">Contact</a></strong></li>
-          </ul>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </section>
-    <!-- the end -->
-    
-    <!-- start copyright block -->
-    <section class="copyright bottom">
-      <div class="container text-center">
-        <!-- socsial -->
-        <div class="social">
-          <a href=""><img src="images/page/google_logo.png" alt="google+"></a>
-          <a href=""><img src="images/page/linkedIn_logo.png" alt="linkedln+"></a>
-        </div>
+    <footer>
+        <!-- start footer navigation block -->
+        <section class="footer-navigation top">
+            <div class="container">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">About Us</a></strong></li>
+                        <li><a href="">History</a></li>
+                        <li><a href="">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">Products</a></strong> </li>
+                        <li><a href="">Building Blocks</a></li>
+                        <li><a href="">ULS Innovative <span>Technology</span></a></li>
+                        <li> <a href="">Configure Your <span>ULS Laser System</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">Resources</a></strong></li>
+                        <li><a href="">Advanced Materials <span>Processing Center</span></a></li>
+                        <li><a href="">How to Guides</a></li>
+                        <li><a href="">Laser Safety</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">How to Buy</a></strong></li>
+                        <li><a href="">Find a representative</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">Services & Support</a></strong></li>
+                        <li><a href="">Software Downloads</a></li>
+                        <li><a href="">User Guides</a></li>
+                        <li><a href="">Warranty Information</a></li>
+                        <li><a href="">Service Programs</a></li>
+                        <li><a href="">Contact Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">Contact</a></strong></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
         <!-- the end -->
 
-        <!-- laguage -->
-        <div class="language-footer">  
-          <img src="images/page/united-states-flag-icon.png" alt="united-states-flag-icon">
-          <span>United States - Change Country or Region</span>
-        </div>
+        <!-- start copyright block -->
+        <section class="copyright bottom">
+            <div class="container text-center">
+                <!-- socsial -->
+                <div class="social">
+                    <a href=""><img src="images/page/google_logo.png" alt="google+"></a>
+                    <a href=""><img src="images/page/linkedIn_logo.png" alt="linkedln+"></a>
+                </div>
+                <!-- the end -->
+
+                <!-- laguage -->
+                <div class="language-footer">
+                    <img src="images/page/united-states-flag-icon.png" alt="united-states-flag-icon">
+                    <span>United States - Change Country or Region</span>
+                </div>
+                <!-- the end -->
+
+                <div class="logo-small">
+                    <h5><img src="images/page/uls_logo_small.png" alt="logo"></h5>
+                </div>
+
+                <!-- copyright -->
+                <div class="copyright-content">
+
+                    <p class="copyright-text">© 2016 Universal Laser Systems, Inc. All rights reserved. Universal Laser Systems logo and name are registered trademarks of Universal Laser Systems, Inc. All other company and product names are trademarks or registered trademarks of their respective companies.</p>
+
+                    <ul class="copyright-link list-inline">
+                        <li>
+                            <a href="">Terms of Use </a> |
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a> |
+                        </li>
+                        <li>
+                            <a href="">Site Map</a> |
+                        </li>
+                        <li>
+                            <a href="">Configure Your Laser System </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- the end -->
+            </div>
+        </section>
         <!-- the end -->
-
-        <div class="logo-small">
-          <h5><img src="images/page/uls_logo_small.png" alt="logo"></h5>
-        </div>
-        
-        <!-- copyright -->
-        <div class="copyright-content">
-          
-          <p class="copyright-text">© 2016 Universal Laser Systems, Inc. All rights reserved. Universal Laser Systems logo and name are registered trademarks of Universal Laser Systems, Inc. All other company and product names are trademarks or registered trademarks of their respective companies.</p>
-
-          <ul class="copyright-link list-inline">
-            <li>
-              <a href="">Terms of Use </a> |    
-            </li>
-            <li>
-              <a href="">Privacy Policy</a>  |
-            </li>
-            <li>
-              <a href="">Site Map</a>  |
-            </li>
-            <li>
-              <a href="">Configure Your Laser System </a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- the end -->
-      </div>
-    </section>
-    <!-- the end -->
-</footer>
+    </footer>
     <!-- the end footer block -->
 
     <!-- script -->
     <script src="scripts/vendor.340984a4.js"></script>
 
 
-<script src="scripts/plugins.bde8e777.js"></script>
+    <script src="scripts/plugins.bde8e777.js"></script>
 
 
-<script src="scripts/main.dbf075c8.js"></script>
-<script>
-  $(document).ready(function(){
-    $('.item').click( function(){
-      $('#video-compoment').get(0).play();       // get(0) gets the original DOM element
-      $('.item').unbind('click');  // remove click listener
-    });
-  });
-</script>
-<script>
-    new WOW().init();
-</script>
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='https://www.google-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-XXXXX-X');ga('send','pageview');
-</script>
+    <script src="scripts/main.dbf075c8.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.item').click(function () {
+                $('#video-compoment').get(0).play(); // get(0) gets the original DOM element
+                $('.item').unbind('click'); // remove click listener
+            });
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
     <!-- the end -->
-  </body>
+</body>
+
 </html>
