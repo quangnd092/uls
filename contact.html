@@ -18,6 +18,61 @@
     <script src="scripts/vendor/modernizr.caa1706e.js"></script>
   </head>
   <body>
+    <script type="text/javascript">
+             
+    // The following example creates complex markers to indicate beaches near
+    // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
+    // to the base of the flagpole.
+
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 1,
+        center: {lat: 0, lng: 0}
+      });
+
+      setMarkers(map);
+    }
+
+    // Data for the markers consisting of a name, a LatLng and a zIndex for the
+    // order in which these markers should display on top of each other.
+    var beaches = [
+      ['Bondi Beach', -10, -50, 3],
+      ['Coogee Beach', -20, 30, 2],
+      ['Cronulla Beach', -5, 150, 1],
+    ];
+
+    function setMarkers(map) {
+      // Adds markers to the map.
+
+      // Marker sizes are expressed as a Size of X,Y where the origin of the image
+      // (0,0) is located in the top left of the image.
+
+      // Origins, anchor positions and coordinates of the marker increase in the X
+      // direction to the right and in the Y direction down.
+      var image = {
+        url: 'images/page/google-icon-black.png',
+      };
+      // Shapes define the clickable region of the icon. The type defines an HTML
+      // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+      // The final coordinate closes the poly by connecting to the first coordinate.
+      // var shape = {
+      //   coords: [1, 1, 1, 20, 18, 20, 18, 1],
+      //   type: 'poly'
+      // };
+      for (var i = 0; i < beaches.length; i++) {
+        var beach = beaches[i];
+        var marker = new google.maps.Marker({
+          position: {lat: beach[1], lng: beach[2]},
+          map: map,
+          icon: image,
+          // shape: shape,
+          title: beach[0],
+          zIndex: beach[3]
+        });
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initMap);
+</script>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -133,194 +188,154 @@
     
     <!-- start content block -->
     <div id="content">
-      <!-- start top content block-->
-      <section class="top-content">
-  <!-- start slide image -->
-  <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-    <!-- the end -->
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="images/home/slide-img-1.png">
-      </div>
-      <div class="item">
-        <img src="images/home/slide-img-2.png">
-      </div>
-      <div class="item">
-        <img src="images/home/slide-img-3.png">
-      </div>
+      <!-- start header with background red -->
+      <section class="header-title red">
+  <div class="container">
+    <div class="wrap-title">
+      <h3 class="text-white">Contact Universal Laser Systems</h3>
+      <h5 class="text-white">To speak with a Universal expert, call us or fill out the form below.</h5>
     </div>
-    <!-- the end -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="fa fa-angle-left" aria-hidden="true"></span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="fa fa-angle-right" aria-hidden="true"></span>
-    </a>
+    <div class="wrap-image">
+      <img src="images/contact/map_opacity.png">
+    </div>
   </div>
-  <!-- the end slide image -->
 </section>
-      <!-- the end top content block -->
-      
-      <!-- start list portals block -->
-      <section class="list-portals">
+      <!-- the end -->
+
+      <!-- start box load google map -->
+      <section class="top-map">
+<div class="wrap-content container">
+  <div id="map-canvas" style="height: 288px;"></div>
+</div>
+</section>
+      <!-- the end -->
+      <!-- start box list location -->
+      <section class="list-location">
   <div class="container">
-    <!-- header portarls -->
-    <header class="title text-center">
-      <h3>
-        <img class="ellipe-left" src="images/page/ellipse.png" alt="">
-        <span>A Truly Universal Technology</span>
-        <img class="ellipe-right" src="images/page/ellipse.png" alt="">
-      </h3>
-      <div class="line">
-      </div>
-    </header>
-    <!-- the end -->
-    
-    <!-- list portarls -->
-    <section class="row">
-        <!-- portarl -->
-        <article class="col-sm-6 col-md-3 portal">
-          <div class="thumbnail text-center">
-            <div class="portal-image">
-              <a href=""><img src="images/post/post_1.png" alt="test"></a>
-            </div>
-            <div class="portal-caption caption">
-              <h4><a href="">Learn</a></h4>
-              <p>Learn the fundamentals of laser technology</p>
-            </div>
-          </div>
-        </article>
-        <!-- the end -->
-        <!-- portarl -->
-        <article class="col-sm-6 col-md-3 portal">
-          <div class="thumbnail text-center">
-            <div class="portal-image">
-              <a href=""><img src="images/post/post_2.png" alt="test"></a>
-            </div>
-            <div class="portal-caption caption">
-              <h4><a href="">Explore</a></h4>
-              <p>Explore Real world  applications</p>
-            </div>
-          </div>
-        </article>
-        <!-- the end -->
-        <!-- portarl -->
-        <article class="col-sm-6 col-md-3 portal">
-          <div class="thumbnail text-center">
-            <div class="portal-image">
-              <a href=""><img src="images/post/post_3.png" alt="test"></a>
-            </div>
-            <div class="portal-caption caption">
-              <h4><a href="">Materials</a></h4>
-              <p>Find out how  DLMP  works with  thousands  of materials</p>
-            </div>
-          </div>
-        </article>
-        <!-- the end -->
-        <!-- portarl -->
-        <article class="col-sm-6 col-md-3 portal">
-          <div class="thumbnail text-center">
-            <div class="portal-image">
-              <a href=""><img src="images/post/post_4.png" alt="test"></a>
-            </div>
-            <div class="portal-caption caption">
-              <h4><a href="">Discover</a></h4>
-              <p>Discover how your  organization can benefit  from laser technology</p>
-            </div>
-          </div>
-        </article>
-        <!-- the end -->
-        <!-- portarl -->
-        <article class="col-sm-6 col-md-3 portal">
-          <div class="thumbnail text-center">
-            <div class="portal-image">
-              <a href=""><img src="images/post/post_8.png" alt="test"></a>
-            </div>
-            <div class="portal-caption caption">
-              <h4><a href="">Deploy</a></h4>
-              <p>See how Universal can  help you deploy  laser technology</p>
-            </div>
-          </div>
-        </article>
-        <!-- the end -->
-        <!-- portarl -->
-        <article class="col-sm-6 col-md-3 portal">
-          <div class="thumbnail text-center">
-            <div class="portal-image">
-              <a href=""><img src="images/post/post_7.png" alt="test"></a>
-            </div>
-            <div class="portal-caption caption">
-              <h4><a href="">The ULS Difference</a></h4>
-              <p>Create a new world of  opportunities with innovative technologies from ULS</p>
-            </div>
-          </div>
-        </article>
-        <!-- the end -->
-        <!-- portarl -->
-        <article class="col-sm-6 col-md-3 portal">
-          <div class="thumbnail text-center">
-            <div class="portal-image">
-              <a href=""><img src="images/post/post_6.png" alt="test"></a>
-            </div>
-            <div class="portal-caption caption">
-              <h4><a href="">Configure</a></h4>
-              <p>Configure your customized ULS laser system</p>
-            </div>
-          </div>
-        </article>
-        <!-- the end -->
-        <!-- portarl -->
-        <article class="col-sm-6 col-md-3 portal">
-          <div class="thumbnail text-center">
-            <div class="portal-image">
-              <a href=""><img src="images/post/post_5.png" alt="test"></a>
-            </div>
-            <div class="portal-caption caption">
-              <h4><a href="">News</a></h4>
-              <p>See what's new with  Universal Laser Systems</p>
-            </div>
-          </div>
-        </article>
-        <!-- the end -->
-    </section>
-    <!-- the end -->
-  </div>
+    <article class="col-md-4 location">
+      <img src="images/page/google-icon.png">
+      <h4>World Headquarters</h4>
+      <p>7845 East Paradise Lane</p>
+      <p>Scottsdale, AZ 85260</p>
+      <p>(800) 859-7033 U.S</p>
+      <p>(480)483-1214 Global</p>
+
+    </article>
+    <article class="col-md-4 location">
+      <img src="images/page/google-icon.png">
+      <h4>Europe</h4>
+      <p>Lerchenfelder Gürtel 43</p>
+      <p>1160 Vienna, Austria </p>
+      <p>+43 1-402-22-50 Europe</p>
+    </article>
+    <article class="col-md-4 location">
+      <img src="images/page/google-icon.png">
+      <h4>Japan</h4>
+      <p>The Yokohama Landmark </p>
+      <p>Tower 220-8115</p>
+      <p>Yokohama, Japan</p>
+      <p>+81 45-224-2279 Japan</p>
+    </article>
+    <div class="clearfix"></div>
+  </div>  
 </section>
-      <!-- the end list portarls block -->
-      
-      <!-- start bottom content block -->
-      <section class="bottom-content">
-  <div class="bottom-content-img">
-    <img src="images/home/background-bottom-content.png">
-  </div>
-  <div class="container">
-    <ul class="list-unstyled">
-      <li class="bottom-content-title">
-        <h3>Lorem ipsum dolor sit amet</h3>
-      </li>
-      <li class="bottom-content-para">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      </li>
-      <li class="bottom-content-actions">
-        <a class="block-link" href="#"><span>Contact a Universal Expert</span><i class="fa fa-angle-right"></i></a>
-      </li>
-    </ul>
-  </div>
+      <!-- the end -->
+      <!-- start box form -->
+      <section class="form wrap-main-content container">
+    <div class="contact-form col-lg-8 col-md-8 col-sm-8">
+      <form action="">
+        <div class="wrap-box-contact">
+          <div class="top-title">
+            <h5 class="text-white">
+              CONTACT INFORMATION
+            </h5>
+          </div>
+
+          <div class="main-box">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">First Name <span class="key">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email <span class="key">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Country</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Telephone</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Last Name <span class="key">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">City <span class="key">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">State/Province</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Company Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Please mail me product information.
+              </label>
+            </div>
+
+            <div class="wrap-question-comment">
+              <label class="title-text-area" for="">Questions or Comments:</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="action-button">
+              <button class="btn btn-red btn-large">
+                SUBMIT
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="privacy-policy col-lg-4 col-md-4 col-sm-4 padding-none">
+      <div class="wrap-box-contact">
+          <div class="top-title">
+            <h5 class="text-white">
+              Privacy Policy
+            </h5>
+          </div>
+
+          <div class="main-box">
+
+          </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
 </section>
-      <!-- the end bottom content block -->
+      <!-- the end -->
     </div>
     <!-- the end block content -->
     
     <!-- start footer block -->
-    <footer>
+   <footer>
     <!-- start footer navigation block -->
     <section class="footer-navigation top">
       <div class="container">
@@ -421,34 +436,35 @@
     <!-- the end -->
 </footer>
     <!-- the end footer block -->
-    
 
+    <!-- script -->
     <script src="scripts/vendor.340984a4.js"></script>
 
 
-    <script src="scripts/plugins.bde8e777.js"></script>
+<script src="scripts/plugins.bde8e777.js"></script>
 
 
-    <script src="scripts/main.dbf075c8.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('.item').click( function(){
-          $('#video-compoment').get(0).play();       // get(0) gets the original DOM element
-          $('.item').unbind('click');  // remove click listener
-        });
-      });
-    </script>
-    <script>
-        new WOW().init();
-    </script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+<script src="scripts/main.dbf075c8.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.item').click( function(){
+      $('#video-compoment').get(0).play();       // get(0) gets the original DOM element
+      $('.item').unbind('click');  // remove click listener
+    });
+  });
+</script>
+<script>
+    new WOW().init();
+</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='https://www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+    <!-- the end -->
   </body>
 </html>
