@@ -7271,7 +7271,9 @@ button.close {
 
 .carousel-inner {
     overflow: hidden;
-    width: 100%
+    width: 100%;
+    background-color: #25292e;
+    height: 300px;
 }
 
 .carousel-inner>.item {
