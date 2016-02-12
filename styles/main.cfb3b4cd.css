@@ -7273,7 +7273,7 @@ button.close {
     overflow: hidden;
     width: 100%;
     background-color: #25292e;
-    height: 300px;
+    
 }
 
 .carousel-inner>.item {
@@ -13582,7 +13582,8 @@ table.table-thead-vertical tbody {
 
 .section-slide-left .left-slide .carousel-inner {
     height: 180px;
-    background-color: #2d3136
+    background-color: #fff;
+    border:1px solid #ddd;
 }
 
 .section-slide-left .left-slide .carousel-inner .item {

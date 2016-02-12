@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.cfb3b4cd.css">
     <script src="scripts/vendor/modernizr.caa1706e.js"></script>
+
+    <script type="text/javascript" language="javascript" src="scripts/lytebox.js"></script>
+    <link rel="stylesheet" href="scripts/lytebox.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -187,12 +190,12 @@
         <!-- start box with slide in left -->
         <section class="section-slide-left container">
             <article class="col-lg-4 col-md-4 col-sm-6 left-slide">
-                <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+                <div id="carousel-example-generic" class="carousel slide carousel-fade  " data-ride="carousel">
                     <div class="carousel-indicators">
                         <div data-target="#carousel-example-generic" data-slide-to="0" class="wrap-img-item">
                             <img src="images/component-detail/poster-video.png">
                         </div>
-                        <div data-target="#carousel-example-generic" data-slide-to="1" class="wrap-img-item">
+                        <div data-target="#carousel-example-generic" data-slide-to="1" class="wrap-img-item active">
                             <img src="images/component-detail/slide-img-2.png">
                         </div>
                         <div data-target="#carousel-example-generic" data-slide-to="2" class="wrap-img-item">
@@ -204,15 +207,14 @@
 
                     </div>
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <video id="video-component" width="320" height="240" poster="images/component-detail/poster-video.png">
-                                <source src="https://www.youtube.com/watch?v=Ujed5d8gOg4" type="video/mp4">
-                            </video>
-
-                        </div>
 
                         <div class="item">
-                            <img src="images/component-detail/slide-img-2.png">
+                            <a href="https://www.youtube.com/embed/lA-7J1GhPGw" class="lytebox">
+                                <img src="images/component-detail/poster-video.png"></a>
+                        </div>
+
+                        <div class="item active">
+                            <a href="images/component-detail/slide-img-2.png" class="lytebox" data-title="Image Descriptions"><img src="images/component-detail/slide-img-2.png"></a>
                         </div>
 
                         <div class="item">
@@ -239,6 +241,7 @@
                 <h3 class="header-top text-blue">Streamline Cut-Path Positioning for Printed Materials</h3>
                 <p class="text">
                     Printed materials sometimes require precision cutting in register with the printing. Common registration methods, including edge registration and pin registration, have accuracy limitations and can present workflow challenges. To solve these issues, Universal developed camera registration for ILS platforms.Now also available for XLS platforms.
+
                 </p>
                 <div class="bottom-img">
                     <img src="images/component-detail/workflow.png">
@@ -485,7 +488,7 @@
     <script>
         $(document).ready(function () {
             $('.item').click(function () {
-                $('#video-component').get(0).play(); // get(0) gets the original DOM element
+                $('#video-compoment').get(0).play(); // get(0) gets the original DOM element
                 $('.item').unbind('click'); // remove click listener
             });
         });
@@ -493,7 +496,24 @@
     <script>
         new WOW().init();
     </script>
-
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+    <!-- the end -->
 </body>
 
 </html>
