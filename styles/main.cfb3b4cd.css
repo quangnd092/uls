@@ -13023,7 +13023,7 @@ footer section.bottom .copyright-content p {
     width: 100%;
     position: relative;
     border-bottom: 5px solid #ba0001;
-    margin-bottom: 25px
+    margin-bottom: 0px
 }
 
 #content section.top-content .carousel.carousel-fade .item.right {
@@ -13931,7 +13931,7 @@ table.table-thead-vertical tbody {
 
 .wrap-content-news .left-content,
 .wrap-content-news .right-content {
-    padding-top: 45px
+    padding-top: 35px
 }
 
 .wrap-content-news .left-content .news header {
