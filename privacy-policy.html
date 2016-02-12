@@ -3,81 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Contact</title>
+    <title>Privacy Policy</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.b25e58c4.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.9727d3c2.png">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw5uR1gaKG3AaDuDrVYa6QaE47n03Td_o"></script>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.cfb3b4cd.css">
     <script src="scripts/vendor/modernizr.caa1706e.js"></script>
 </head>
 
 <body>
-    <script type="text/javascript">
-        // The following example creates complex markers to indicate beaches near
-        // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
-        // to the base of the flagpole.
-
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map-canvas'), {
-                zoom: 1,
-                center: {
-                    lat: 0,
-                    lng: 0
-                }
-            });
-
-            setMarkers(map);
-        }
-
-        // Data for the markers consisting of a name, a LatLng and a zIndex for the
-        // order in which these markers should display on top of each other.
-        var beaches = [
-      ['Bondi Beach', -10, -50, 3],
-      ['Coogee Beach', -20, 30, 2],
-      ['Cronulla Beach', -5, 150, 1],
-    ];
-
-        function setMarkers(map) {
-            // Adds markers to the map.
-
-            // Marker sizes are expressed as a Size of X,Y where the origin of the image
-            // (0,0) is located in the top left of the image.
-
-            // Origins, anchor positions and coordinates of the marker increase in the X
-            // direction to the right and in the Y direction down.
-            var image = {
-                url: 'images/page/google-icon-black.png',
-            };
-            // Shapes define the clickable region of the icon. The type defines an HTML
-            // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-            // The final coordinate closes the poly by connecting to the first coordinate.
-            // var shape = {
-            //   coords: [1, 1, 1, 20, 18, 20, 18, 1],
-            //   type: 'poly'
-            // };
-            for (var i = 0; i < beaches.length; i++) {
-                var beach = beaches[i];
-                var marker = new google.maps.Marker({
-                    position: {
-                        lat: beach[1],
-                        lng: beach[2]
-                    },
-                    map: map,
-                    icon: image,
-                    // shape: shape,
-                    title: beach[0],
-                    zIndex: beach[3]
-                });
-            }
-        }
-        google.maps.event.addDomListener(window, 'load', initMap);
-    </script>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -86,11 +28,11 @@
     <header>
         <div class="container header">
             <div class="col-xs-6 col-md-6 box-logo">
-                <h1><a href="index.html"><img src="images/page/uls_logo.png" alt="ulslogo"></a></h1>
+                <h1><a href=""><img src="images/page/uls_logo.png" alt="ulslogo"></a></h1>
             </div>
             <div class="col-xs-6 col-md-6 text-right box-search">
                 <div class="form-group">
-                    <select name="" style="display:none">
+                    <select name="">
                         <option value="">English</option>
                         <option value="">Español</option>
                         <option value="">Francais</option>
@@ -143,60 +85,46 @@
             <!-- start list navibar -->
             <div class="collapse navbar-collapse" id="list-menu">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
                         <ul class="dropdown-menu">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="history.html">History</a></li>
-                            <li><a href="newsroom.html">Newsroom</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Newsroom</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
                         <ul class="dropdown-menu">
-                            <li><a href="building-blocks.html">Building Blocks</a></li>
-                            <li><a href="innovative-technology.html">ULS Innovative Technology</a></li>
-                            <li><a href="configure.html">Configure Your ULS Laser System</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materials</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="wood.html">Wood</a></li>
-                            <li><a href="microsurface-plastic.html">Microsurface Plastic</a></li>
-                            <li><a href="3M-MPF.html">3M™ Microcellular Polyurethane Foam</a></li>
-                            <li><a href="3M-Protection-Film.html">3M™ Protection Film</a></li>
-                            <li><a href="halar.html">Halar®</a></li>
-                            <li><a href="kapton.html">Kapton® Polyimide Film</a></li>
-                            <li><a href="viton.html">Viton® Fluoroelastomer</a></li>
-                            <li><a href="material.html">Teflon® Fluoropolymer</a></li>
+                            <li><a href="#">Building Blocks</a></li>
+                            <li><a href="#">ULS Innovative Technology</a></li>
+                            <li><a href="#">Configure Your ULS Laser System</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
                         <ul class="dropdown-menu">
-                            <li><a href="material-processing.html">Advanced Materials Processing Center</a></li>
-                            <li><a href="how-to-guide.html">How to Guides</a></li>
-                            <li><a href="laser-safety.html">Laser Safety</a></li>
+                            <li><a href="#">Advanced Materials Processing Center</a></li>
+                            <li><a href="#">How to Guides</a></li>
+                            <li><a href="#">Laser Safety</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How to Buy</a>
                         <ul class="dropdown-menu">
-                            <li><a href="find-representative.html">Find a representative</a></li>
+                            <li><a href="#">Find a representative</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service & Support</a>
                         <ul class="dropdown-menu">
-                            <li><a href="software-download.html">Software Downloads</a></li>
-                            <li><a href="user-guide.html">User Guides</a></li>
-                            <li><a href="warranty-information.html">Warranty Information</a></li>
-                            <li><a href="service-programs.html">Service Programs</a></li>
-                            <li><a href="contact-services.html">Contact Service</a></li>
+                            <li><a href="#">Software Downloads</a></li>
+                            <li><a href="#">User Guides</a></li>
+                            <li><a href="#">Warranty Information</a></li>
+                            <li><a href="#">Service Programs</a></li>
+                            <li><a href="#">Contact Service</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <!-- the end list navibar -->
@@ -211,144 +139,44 @@
         <section class="header-title red">
             <div class="container">
                 <div class="wrap-title">
-                    <h3 class="text-white">Contact Universal Laser Systems</h3>
-                    <h5 class="text-white">To speak with a Universal expert, call us or fill out the form below.</h5>
-                </div>
-                <div class="wrap-image">
-                    <img src="images/contact/map_opacity.png">
+                    <h3 class="text-white not-none">Privacy Policy</h3>
                 </div>
             </div>
         </section>
         <!-- the end -->
-
-        <!-- start box load google map -->
-        <section class="top-map">
-            <div class="wrap-content container">
-                <div id="map-canvas" style="height: 288px;"></div>
-            </div>
-        </section>
-        <!-- the end -->
-        <!-- start box list location -->
-        <section class="list-location">
+        <!-- start box content -->
+        <section class="privacy-policy-content">
             <div class="container">
-                <article class="col-md-4 location">
-                    <img src="images/page/google-icon.png">
-                    <h4>World Headquarters</h4>
-                    <p>7845 East Paradise Lane</p>
-                    <p>Scottsdale, AZ 85260</p>
-                    <p>(800) 859-7033 U.S</p>
-                    <p>(480)483-1214 Global</p>
-
+                <article>
+                    <h5>Universal Laser Privacy Policy Last Updated July 1, 2010</h5>
+                    <pclass="text">At Universal Laser Systems, Inc. (“Universal Laser”) your trust and satisfaction is of the utmost importance. Because we respect your privacy, we have instituted this Privacy Policy to ensure that your personal information is handled in a safe and responsible manner. We reserve the right to change the provisions of this Privacy Policy at any time. We will alert you that changes have been made by indicating on the Privacy Policy the date it was last updated. We encourage you to review this Privacy Policy from time to time to make sure that you understand how any personal information you provide will be used.</p>
                 </article>
-                <article class="col-md-4 location">
-                    <img src="images/page/google-icon.png">
-                    <h4>Europe</h4>
-                    <p>Lerchenfelder Gürtel 43</p>
-                    <p>1160 Vienna, Austria </p>
-                    <p>+43 1-402-22-50 Europe</p>
+
+                <article>
+                    <h5>What this Privacy Policy Covers</h5>
+                    <p class="text">This Privacy Policy covers how Universal Laser treats personal information that it collects and receives with respect to your use of the website located at www.ulsinc.com (the “Website’) and any services accessible through the Website (the “Services”). Personal information is information about you that is personally identifiable such as your name, address, email address, phone number or other information about you when it is directly linked with your personally identifiable information. Personal information does not include “aggregate” information, which is data we collect about the use of the Website or about a group or category of products, services or users, from which individual identities or other personal information is not attached or has been removed. This Privacy Policy does not apply to aggregate information. It also does not apply to any companies or websites that Universal Laser does not own or control, or to people that Universal Laser does not employ or manage.</p>
                 </article>
-                <article class="col-md-4 location">
-                    <img src="images/page/google-icon.png">
-                    <h4>Japan</h4>
-                    <p>The Yokohama Landmark </p>
-                    <p>Tower 220-8115</p>
-                    <p>Yokohama, Japan</p>
-                    <p>+81 45-224-2279 Japan</p>
+
+                <article>
+                    <h5>Information We Collect</h5>
+                    <p class="text">You may choose to provide your personal information (such as your name, address, telephone number and email address) to Universal Laser through the Website. Here are some of the ways you may provide personal information, information and the types of information you may submit.</p>
                 </article>
-                <div class="clearfix"></div>
+
+                <article>
+                    <h5>Personal Information</h5>
+                    <p class="text">Universal Laser may collect personal information in a number of ways. We may collect certain information you voluntarily provide to us. For example, we may collect your name, user name, email address, telephone number, other contact and demographic information when you register, set up an account, fill out a form, submit a comment or contact us by email or other means. Also, we occasionally may ask you to complete online surveys about your activities, attitudes and interests with our products. These surveys help us serve you better and improve the usefulness of our Website. In conducting these surveys we may ask you for your name and email address. Personal information may also be collected if you participate in any interactive forums or features on the Website or through the Services. Universal Laser may combine information about you that we have with information we obtain from business partners or other companies. When you use the Website, some information is also automatically collected, such as your Internet Protocol (IP) address, your operating system, the browser type, the address of a referring website, and your activity on the Website. We treat this information as personally information only if we combine it with or link it to any of the identifying information mentioned above. Otherwise, it is used in the aggregate only and not considered your personal information.</p>
+                </article>
+                <article>
+                    <h5>Cookies and Web Beacons</h5>
+                    <p class="text">We may automatically collect certain information through the use of “cookies” or “web beacons.”</p>
+
+                    <p class="text">We use cookies in conjunction with our Website and advertisements. A cookie typically consists of a small data file generated by a web page server and stored on your computer's hard drive at the request of a website to enable the site to recognize users who have previously visited them and retain certain information such as customary preferences and history. Cookies, by themselves, are not able to extract any personal information from you. Unless you specifically tell us, we will not know who you are even though we may assign your computer a cookie. You can control the creation of cookies through your web browser. However, you may not be able to use certain functions and features of a website if you disable cookies. We use the information from cookies to evaluate and improve our Websites and advertisements. If we link cookies to any personally identifying information, we will treat this information as personal information.</p>
+
+                    <p class="text">We may also use web beacons in connection with our Website and advertisements. Web beacons (also known as clear gifs) are small, invisible, graphic imagines that may be used on the Website or in emails relating to the Website to collect certain information and monitor user activity on the Website.</p>
+
+                    <p class="text">We may also use third parties to serve ads on the Website. These third parties may place cookies, web beacons or other devices on your computer to collect non-personal information, and information provided by these devices may be used, among other things, to analyze data, to determine the popularity of certain content, to deliver advertising targeted to your interests and to better understand the usage and visitation of our Website and the other sites tracked by these third parties. This policy does not apply to, and we are not responsible for, cookies or web beacons in third party ads, and we encourage you to check the privacy policies of advertisers and/or ad services to learn about their use of cookies, web beacons, and other technology.</p>
+                </article>
             </div>
-        </section>
-        <!-- the end -->
-        <!-- start box form -->
-        <section class="form wrap-main-content container">
-            <div class="contact-form col-lg-8 col-md-8 col-sm-8">
-                <form action="">
-                    <div class="wrap-box-contact">
-                        <div class="top-title">
-                            <h5 class="text-white">
-              CONTACT INFORMATION
-            </h5>
-                        </div>
-
-                        <div class="main-box">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">First Name <span class="key">*</span></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email <span class="key">*</span></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Country</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Telephone</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Last Name <span class="key">*</span></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">City <span class="key">*</span></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">State/Province</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Company Name</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Please mail me product information.
-                                </label>
-                            </div>
-
-                            <div class="wrap-question-comment">
-                                <label class="title-text-area" for="">Questions or Comments:</label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                            </div>
-
-                            <div class="action-button">
-                                <button class="btn btn-red btn-large">
-                                    SUBMIT
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div class="privacy-policy col-lg-4 col-md-4 col-sm-4 padding-none">
-                <div>
-
-                    <div>
-                        <a href="privacy-policy.html">
-                            <button class="btn btn-black btn-large">Privacy Policy</button>
-                        </a>
-                    </div>
-
-                    <div class="main-box">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
         </section>
         <!-- the end -->
     </div>
