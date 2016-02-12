@@ -13533,7 +13533,8 @@ table.table-thead-vertical tbody {
 }
 
 #map-canvas {
-    height: 100%
+    height: 100%;
+    border: 2px solid #ddd;
 }
 
 .copyright-text {
