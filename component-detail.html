@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.cfb3b4cd.css">
     <script src="scripts/vendor/modernizr.caa1706e.js"></script>
+
+    <!--Start Lightbox -->
+    <script type="text/javascript" language="javascript" src="scripts/lytebox.js"></script>
+    <link rel="stylesheet" href="scripts/lytebox.css" type="text/css" media="screen" />
+    <!--End Lightbox -->
+
+    <!--Start Form Popup -->
+    <link href="scripts/form_popup.css" rel="stylesheet">
+    <script src="scripts/form_popup.js"></script>
+    <!--End Form Popup -->
 </head>
 
 <body>
@@ -168,7 +178,8 @@
                             <h3 class="text-yellow wow fadeInDown" data-wow-duration="1.5s">UCR Advantages</h3>
                             <p class="text-white wow fadeInRightBig" data-wow-duration="1s">Use standard registration marks including unfilled circle, solid circle,
                                 <br>crosshairs and combined crosshairs/circle.</p>
-                            <button class="btn btn-red btn-large wow fadeInRightBig" data-wow-duration="1.5s">Ask Question</button>
+
+                            <button class="btn btn-red btn-large wow fadeInRightBig" data-wow-duration="1.5s" id="popup" onclick="div_show()">Ask Question</button>
                         </div>
                     </div>
                 </div>
@@ -187,9 +198,10 @@
         <!-- start box with slide in left -->
         <section class="section-slide-left container">
             <article class="col-lg-4 col-md-4 col-sm-6 left-slide">
-                <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+                <div id="carousel-example-generic" class="carousel slide carousel-fade  " data-ride="carousel">
+
                     <div class="carousel-indicators">
-                        <div data-target="#carousel-example-generic" data-slide-to="0" class="wrap-img-item">
+                        <div data-target="#carousel-example-generic" data-slide-to="0" class="wrap-img-item active">
                             <img src="images/component-detail/poster-video.png">
                         </div>
                         <div data-target="#carousel-example-generic" data-slide-to="1" class="wrap-img-item">
@@ -201,26 +213,25 @@
                         <div data-target="#carousel-example-generic" data-slide-to="3" class="wrap-img-item">
                             <img src="images/component-detail/slide-img-4.png">
                         </div>
-
                     </div>
+
                     <div class="carousel-inner" role="listbox">
+
                         <div class="item active">
-                            <video id="video-component" width="320" height="240" poster="images/component-detail/poster-video.png">
-                                <source src="https://www.youtube.com/watch?v=Ujed5d8gOg4" type="video/mp4">
-                            </video>
+                            <a href="https://www.youtube.com/embed/CwHDH7oURaU" class="lytebox" data-lyte-options="width:800 height:377" data-title="Universal's Camera Registration (UCR)">
+                                <img src="images/component-detail/poster-video.png"></a>
+                        </div>
 
+                        <div class="item ">
+                            <a href="images/component-detail/slide-img-2.png" class="lytebox" data-title="Camera Registration for ILS Platforms"><img src="images/component-detail/slide-img-2.png" width="100%"></a>
                         </div>
 
                         <div class="item">
-                            <img src="images/component-detail/slide-img-2.png">
+                            <a href="images/component-detail/slide-img-3.png" class="lytebox" data-title="Material with registration marks is placed in the laser system."><img src="images/component-detail/slide-img-3.png"></a>
                         </div>
 
                         <div class="item">
-                            <img src="images/component-detail/slide-img-3.png">
-                        </div>
-
-                        <div class="item">
-                            <img src="images/component-detail/slide-img-4.png">
+                            <a href="images/component-detail/slide-img-4.png" class="lytebox" data-title="Registration marks are selected on screen and GO button is clicked."><img src="images/component-detail/slide-img-4.png"></a>
                         </div>
 
 
@@ -228,11 +239,14 @@
                 </div>
 
                 <div class="box-button top">
-                    <button class="btn btn-red btn-large">Send Me Information</button>
+                    <button class="btn btn-red btn-large" id="popup" onclick="div_show()">Send Me Information</button>
                 </div>
                 <div class="box-button bottom">
-                    <button class="btn btn-black btn-large">Download Specification</button>
+                    <a href="http://www.ulsinc.com/downloads/spec-sheets/camera-registration.pdf" target="blank">
+                        <button class="btn btn-black btn-large">Download Specification</button>
+                    </a>
                 </div>
+
             </article>
 
             <article class="col-lg-8 col-md-8 col-sm-6 right-content">
@@ -485,7 +499,7 @@
     <script>
         $(document).ready(function () {
             $('.item').click(function () {
-                $('#video-component').get(0).play(); // get(0) gets the original DOM element
+                $('#video-compoment').get(0).play(); // get(0) gets the original DOM element
                 $('.item').unbind('click'); // remove click listener
             });
         });
@@ -494,6 +508,90 @@
         new WOW().init();
     </script>
 
+    <!-- Start Popup Form -->
+    <div id="form_popup">
+        <div id="popupContact">
+            <section id="deafult-content">
+                <section class="form wrap-main-content container">
+                    <div class="contact-form col-lg-8 col-md-8 col-sm-8">
+                        <!-- Start Contact Us Form -->
+                        <form action="">
+                            <div class="wrap-box-contact">
+                                <img id="close" src="images/contact/close.png" onclick="div_hide()">
+                                <div class="top-title">
+                                    <h5 class="text-white">CONTACT INFORMATION</h5>
+                                </div>
+
+                                <div class="main-box">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">First Name <span class="key">*</span></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email <span class="key">*</span></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Country</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Country">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Telephone</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Telephone">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Last Name <span class="key">*</span></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">City <span class="key">*</span></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="City">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">State/Province</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="State/Province">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Company Name</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Company Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Please mail me product information.
+                                        </label>
+                                    </div>
+
+                                    <div class="wrap-question-comment">
+                                        <label class="title-text-area" for="">Questions or Comments:</label>
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </div>
+
+                                    <div class="action-button">
+                                        <button class="btn btn-red btn-large">
+                                            SUBMIT
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End Form -->
+                    </div>
+                    <div class="clearfix"></div>
+                </section>
+            </section>
+        </div>
+
+    </div>
+    <!--End Popup Form-->
 </body>
 
 </html>
