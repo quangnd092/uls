@@ -1,316 +1,333 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Redesign ULS</title>
+    <title>Plain Text</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.b25e58c4.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.9727d3c2.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw5uR1gaKG3AaDuDrVYa6QaE47n03Td_o"></script>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.cfb3b4cd.css">
     <script src="scripts/vendor/modernizr.caa1706e.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+
     <!-- start header block-->
     <header>
-  <div class="container header">
-    <div class="col-xs-6 col-md-6 box-logo">
-      <h1><a href=""><img src="images/page/uls_logo.png" alt="ulslogo"></a></h1>
-    </div>
-    <div class="col-xs-6 col-md-6 text-right box-search">
-      <div class="form-group">
-        <select name="">
-          <option value="">English</option>
-          <option value="">Español</option>
-          <option value="">Francais</option>
-          <option value="">Deutsch</option>
-          <option value="">Portugues</option>
-          <option value="">Italiano</option>
-        </select>
-      </div>
-      <div class="form-group box-option">
-        <input type="text" class="form-control" placeholder="Search...">
-        <button class="btn btn-default">Search</button>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
-</header>
-    <!-- the end header block-->
-    
-    <!-- start block navibar -->
-   <nav class="navbar">
-    <div class="container">
-
-      <!-- start navibar header only display in mobile -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#list-menu" aria-expanded="false">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- logo and button toggle box search -->
-        <a href=""  class="logo visible-xs"><img src="images/page/uls_logo.png" alt="ulslogo"></a>
-        <button type="button" class="navbar-toggle collapsed btn-search" data-toggle="collapse" data-target="#list-option" aria-expanded="false">
-          <i class="fa fa-search"></i>
-        </button>
-        <!-- the end -->
-      </div>
-      <!-- the end -->
-      
-      <!-- start box search display in mobile -->
-      <div class="collapse navbar-collapse" id="list-option">
-        <div class="visible-xs box-search">
-          <div class="box-option">
-            <input type="text" class="form-control" placeholder="Search...">
-            <button class="btn btn-default">Search</button>
-          </div>
+        <div class="container header">
+            <div class="col-xs-6 col-md-6 box-logo">
+                <h1><a href="index.html"><img src="images/page/uls_logo.png" alt="ulslogo"></a></h1>
+            </div>
+            <div class="col-xs-6 col-md-6 text-right box-search">
+                <div class="form-group">
+                    <select name="" style="display:none">
+                        <option value="">English</option>
+                        <option value="">Español</option>
+                        <option value="">Francais</option>
+                        <option value="">Deutsch</option>
+                        <option value="">Portugues</option>
+                        <option value="">Italiano</option>
+                    </select>
+                </div>
+                <div class="form-group box-option">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="btn btn-default">Search</button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
         </div>
-      </div>
-      <!-- the end -->
-      
-      <!-- start list navibar -->
-      <div class="collapse navbar-collapse" id="list-menu">
-        <ul class="nav navbar-nav">
-          <li class="dropdown active">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">History</a></li>
-              <li><a href="#">Newsroom</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Building Blocks</a></li>
-              <li><a href="#">ULS Innovative Technology</a></li>
-              <li><a href="#">Configure Your ULS Laser System</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Advanced Materials Processing Center</a></li>
-              <li><a href="#">How to Guides</a></li>
-              <li><a href="#">Laser Safety</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How to Buy</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Find a representative</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service & Support</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Software Downloads</a></li>
-              <li><a href="#">User Guides</a></li>
-              <li><a href="#">Warranty Information</a></li>
-              <li><a href="#">Service Programs</a></li>
-              <li><a href="#">Contact Service</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <!-- the end list navibar -->
+    </header>
+    <!-- the end header block-->
 
-    </div>
-</nav>
+    <!-- start block navibar -->
+    <nav class="navbar">
+        <div class="container">
+
+            <!-- start navibar header only display in mobile -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#list-menu" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- logo and button toggle box search -->
+                <a href="index.html" class="logo visible-xs"><img src="images/page/uls_logo.png" alt="ulslogo"></a>
+                <button type="button" class="navbar-toggle collapsed btn-search" data-toggle="collapse" data-target="#list-option" aria-expanded="false">
+                    <i class="fa fa-search"></i>
+                </button>
+                <!-- the end -->
+            </div>
+            <!-- the end -->
+
+            <!-- start box search display in mobile -->
+            <div class="collapse navbar-collapse" id="list-option">
+                <div class="visible-xs box-search">
+                    <div class="box-option">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button class="btn btn-default">Search</button>
+                    </div>
+                </div>
+            </div>
+            <!-- the end -->
+
+            <!-- start list navibar -->
+            <div class="collapse navbar-collapse" id="list-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="newsroom.html">Newsroom</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="building-blocks.html">Building Blocks</a></li>
+                            <li><a href="innovative-technology.html">ULS Innovative Technology</a></li>
+                            <li><a href="configure.html">Configure Your ULS Laser System</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materials</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="wood.html">Wood</a></li>
+                            <li><a href="microsurface-plastic.html">Microsurface Plastic</a></li>
+                            <li><a href="3M-MPF.html">3M™ Microcellular Polyurethane Foam</a></li>
+                            <li><a href="3M-Protection-Film.html">3M™ Protection Film</a></li>
+                            <li><a href="halar.html">Halar®</a></li>
+                            <li><a href="kapton.html">Kapton® Polyimide Film</a></li>
+                            <li><a href="viton.html">Viton® Fluoroelastomer</a></li>
+                            <li><a href="material.html">Teflon® Fluoropolymer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="material-processing.html">Advanced Materials Processing Center</a></li>
+                            <li><a href="how-to-guide.html">How to Guides</a></li>
+                            <li><a href="laser-safety.html">Laser Safety</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How to Buy</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="find-representative.html">Find a representative</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="software-download.html">Software Downloads</a></li>
+                            <li><a href="user-guide.html">User Guides</a></li>
+                            <li><a href="warranty-information.html">Warranty Information</a></li>
+                            <li><a href="service-programs.html">Service Programs</a></li>
+                            <li><a href="contact-services.html">Contact Service</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- the end list navibar -->
+
+        </div>
+    </nav>
     <!-- the end navibar block -->
-    
+
     <!-- start content block -->
     <div id="content">
-      <!-- start header with background red -->
-      <section class="header-title red">
-        <div class="container">
-          <div class="wrap-title">
-            <h3 class="text-white not-none">Privacy Policy</h3>
-          </div>
-        </div>
-      </section>
-      <!-- the end -->
-      <!-- start box content -->
-      <section class="privacy-policy-content">
-        <div class="container">
-          <article>
-            <h5>Universal Laser Privacy Policy Last Updated July 1, 2010</h5>
-            <pclass="text">At Universal Laser Systems, Inc. (“Universal Laser”) your trust and satisfaction is of the utmost importance. Because we respect your privacy, we have instituted this Privacy Policy to ensure that your personal information is handled in a safe and responsible manner. We reserve the right to change the provisions of this Privacy Policy at any time. We will alert you that changes have been made by indicating on the Privacy Policy the date it was last updated. We encourage you to review this Privacy Policy from time to time to make sure that you understand how any personal information you provide will be used.</p>
-          </article>
-          
-          <article>
-          <h5>What this Privacy Policy Covers</h5>
-          <p class="text">This Privacy Policy covers how Universal Laser treats personal information that it collects and receives with respect to your use of the website located at www.ulsinc.com (the “Website’) and any services accessible through the Website (the “Services”). Personal information is information about you that is personally identifiable such as your name, address, email address, phone number or other information about you when it is directly linked with your personally identifiable information. Personal information does not include “aggregate” information, which is data we collect about the use of the Website or about a group or category of products, services or users, from which individual identities or other personal information is not attached or has been removed. This Privacy Policy does not apply to aggregate information. It also does not apply to any companies or websites that Universal Laser does not own or control, or to people that Universal Laser does not employ or manage.</p>
-          </article>
-          
-          <article>
-          <h5>Information We Collect</h5>
-          <p class="text">You may choose to provide your personal information (such as your name, address, telephone number and email address) to Universal Laser through the Website. Here are some of the ways you may provide personal information, information and the types of information you may submit.</p>
-          </article>
+        <!-- start header with background red -->
+        <section class="header-title red">
+            <div class="container">
+                <div class="wrap-title">
+                    <h3 class="text-white not-none">Tool Kit - Plain Text</h3>
+                </div>
+            </div>
+        </section>
+        <!-- the end -->
+        <!-- start box content -->
+        <section id="deafult-content">
+            <div class="container">
+                <article>
+                    <h3 class="header-top">Heading H3</h3>
+                    <p class="text">Paragraph</p>
+                </article>
 
-          <article>
-          <h5>Personal Information</h5>
-          <p class="text">Universal Laser may collect personal information in a number of ways. We may collect certain information you voluntarily provide to us. For example, we may collect your name, user name, email address, telephone number, other contact and demographic information when you register, set up an account, fill out a form, submit a comment or contact us by email or other means. Also, we occasionally may ask you to complete online surveys about your activities, attitudes and interests with our products. These surveys help us serve you better and improve the usefulness of our Website. In conducting these surveys we may ask you for your name and email address. Personal information may also be collected if you participate in any interactive forums or features on the Website or through the Services. Universal Laser may combine information about you that we have with information we obtain from business partners or other companies. When you use the Website, some information is also automatically collected, such as your Internet Protocol (IP) address, your operating system, the browser type, the address of a referring website, and your activity on the Website. We treat this information as personally information only if we combine it with or link it to any of the identifying information mentioned above. Otherwise, it is used in the aggregate only and not considered your personal information.</p>
-          </article>
-          <article>
-          <h5>Cookies and Web Beacons</h5>
-          <p class="text">We may automatically collect certain information through the use of “cookies” or “web beacons.”</p>
+                <article>
+                    <h4 class="header-top">Heading H4</h4>
+                    <p class="text">Paragraph</p>
+                </article>
 
-          <p class="text">We use cookies in conjunction with our Website and advertisements. A cookie typically consists of a small data file generated by a web page server and stored on your computer's hard drive at the request of a website to enable the site to recognize users who have previously visited them and retain certain information such as customary preferences and history. Cookies, by themselves, are not able to extract any personal information from you. Unless you specifically tell us, we will not know who you are even though we may assign your computer a cookie. You can control the creation of cookies through your web browser. However, you may not be able to use certain functions and features of a website if you disable cookies. We use the information from cookies to evaluate and improve our Websites and advertisements. If we link cookies to any personally identifying information, we will treat this information as personal information.</p>
+                <article>
+                    <h5 class="header-top">Heading H5</h5>
+                    <p class="text">Paragraph</p>
+                    <button class="btn btn-red btn-large">Red Button</button>
+                    <button class="btn btn-black btn-large">Black Button</button>
+                </article>
 
-          <p class="text">We may also use web beacons in connection with our Website and advertisements. Web beacons (also known as clear gifs) are small, invisible, graphic imagines that may be used on the Website or in emails relating to the Website to collect certain information and monitor user activity on the Website.</p>
+                <article>
+                    <h3 class="header-top text-blue">Heading H3 Blue</h3>
+                    <p class="text">Paragraph
+                    </p>
+                </article>
 
-          <p class="text">We may also use third parties to serve ads on the Website. These third parties may place cookies, web beacons or other devices on your computer to collect non-personal information, and information provided by these devices may be used, among other things, to analyze data, to determine the popularity of certain content, to deliver advertising targeted to your interests and to better understand the usage and visitation of our Website and the other sites tracked by these third parties. This policy does not apply to, and we are not responsible for, cookies or web beacons in third party ads, and we encourage you to check the privacy policies of advertisers and/or ad services to learn about their use of cookies, web beacons, and other technology.</p>
-          </article>
-        </div>
-      </section>
-      <!-- the end -->
+                <article>
+                    <h4 class="text-red header-top border-bottom">Heading H4 Red</h4>
+                    <p class="text">Paragraph
+                    </p>
+                </article>
+
+                <article>
+                    <h5 class="header-top">Sub Heading H5</h5>
+                    <p class="text">Paragraph
+                    </p>
+                </article>
+
+
+
+
+
+
+
+            </div>
+        </section>
+        <!-- the end -->
     </div>
     <!-- the end block content -->
-    
+
     <!-- start footer block -->
     <footer>
-    <!-- start footer navigation block -->
-    <section class="footer-navigation top">
-      <div class="container">
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation"> 
-          <ul class="list-unstyled">
-            <li><strong><a href="">About Us</a></strong></li>
-            <li><a href="">History</a></li>
-            <li><a href="">Newsroom</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">Products</a></strong> </li>
-            <li><a href="">Building Blocks</a></li>
-            <li><a href="">ULS Innovative <span>Technology</span></a></li>
-            <li> <a href="">Configure Your <span>ULS Laser System</span></a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">Resources</a></strong></li>
-            <li><a href="">Advanced Materials <span>Processing Center</span></a></li>
-            <li><a href="">How to Guides</a></li>
-            <li><a href="">Laser Safety</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">How to Buy</a></strong></li>
-            <li><a href="">Find a representative</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">Services & Support</a></strong></li>
-            <li><a href="">Software Downloads</a></li>
-            <li><a href="">User Guides</a></li>
-            <li><a href="">Warranty Information</a></li>
-            <li><a href="">Service Programs</a></li>
-            <li><a href="">Contact Service</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
-          <ul class="list-unstyled">
-            <li><strong><a href="">Contact</a></strong></li>
-          </ul>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </section>
-    <!-- the end -->
-    
-    <!-- start copyright block -->
-    <section class="copyright bottom">
-      <div class="container text-center">
-        <!-- socsial -->
-        <div class="social">
-          <a href=""><img src="images/page/google_logo.png" alt="google+"></a>
-          <a href=""><img src="images/page/linkedIn_logo.png" alt="linkedln+"></a>
-        </div>
+        <!-- start footer navigation block -->
+        <section class="footer-navigation top">
+            <div class="container">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">About Us</a></strong></li>
+                        <li><a href="">History</a></li>
+                        <li><a href="">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">Products</a></strong> </li>
+                        <li><a href="">Building Blocks</a></li>
+                        <li><a href="">ULS Innovative <span>Technology</span></a></li>
+                        <li> <a href="">Configure Your <span>ULS Laser System</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">Resources</a></strong></li>
+                        <li><a href="">Advanced Materials <span>Processing Center</span></a></li>
+                        <li><a href="">How to Guides</a></li>
+                        <li><a href="">Laser Safety</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">How to Buy</a></strong></li>
+                        <li><a href="">Find a representative</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">Services & Support</a></strong></li>
+                        <li><a href="">Software Downloads</a></li>
+                        <li><a href="">User Guides</a></li>
+                        <li><a href="">Warranty Information</a></li>
+                        <li><a href="">Service Programs</a></li>
+                        <li><a href="">Contact Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+                    <ul class="list-unstyled">
+                        <li><strong><a href="">Contact</a></strong></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
         <!-- the end -->
 
-        <!-- laguage -->
-        <div class="language-footer">  
-          <img src="images/page/united-states-flag-icon.png" alt="united-states-flag-icon">
-          <span>United States - Change Country or Region</span>
-        </div>
+        <!-- start copyright block -->
+        <section class="copyright bottom">
+            <div class="container text-center">
+                <!-- socsial -->
+                <div class="social">
+                    <a href=""><img src="images/page/google_logo.png" alt="google+"></a>
+                    <a href=""><img src="images/page/linkedIn_logo.png" alt="linkedln+"></a>
+                </div>
+                <!-- the end -->
+
+                <!-- laguage -->
+                <div class="language-footer">
+                    <img src="images/page/united-states-flag-icon.png" alt="united-states-flag-icon">
+                    <span>United States - Change Country or Region</span>
+                </div>
+                <!-- the end -->
+
+                <div class="logo-small">
+                    <h5><img src="images/page/uls_logo_small.png" alt="logo"></h5>
+                </div>
+
+                <!-- copyright -->
+                <div class="copyright-content">
+
+                    <p class="copyright-text">© 2016 Universal Laser Systems, Inc. All rights reserved. Universal Laser Systems logo and name are registered trademarks of Universal Laser Systems, Inc. All other company and product names are trademarks or registered trademarks of their respective companies.</p>
+
+                    <ul class="copyright-link list-inline">
+                        <li>
+                            <a href="">Terms of Use </a> |
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a> |
+                        </li>
+                        <li>
+                            <a href="">Site Map</a> |
+                        </li>
+                        <li>
+                            <a href="">Configure Your Laser System </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- the end -->
+            </div>
+        </section>
         <!-- the end -->
-
-        <div class="logo-small">
-          <h5><img src="images/page/uls_logo_small.png" alt="logo"></h5>
-        </div>
-        
-        <!-- copyright -->
-        <div class="copyright-content">
-          
-          <p class="copyright-text">© 2016 Universal Laser Systems, Inc. All rights reserved. Universal Laser Systems logo and name are registered trademarks of Universal Laser Systems, Inc. All other company and product names are trademarks or registered trademarks of their respective companies.</p>
-
-          <ul class="copyright-link list-inline">
-            <li>
-              <a href="">Terms of Use </a> |    
-            </li>
-            <li>
-              <a href="">Privacy Policy</a>  |
-            </li>
-            <li>
-              <a href="">Site Map</a>  |
-            </li>
-            <li>
-              <a href="">Configure Your Laser System </a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- the end -->
-      </div>
-    </section>
-    <!-- the end -->
-</footer>
+    </footer>
     <!-- the end footer block -->
 
     <!-- script -->
     <script src="scripts/vendor.340984a4.js"></script>
 
 
-<script src="scripts/plugins.bde8e777.js"></script>
+    <script src="scripts/plugins.bde8e777.js"></script>
 
 
-<script src="scripts/main.dbf075c8.js"></script>
-<script>
-  $(document).ready(function(){
-    $('.item').click( function(){
-      $('#video-compoment').get(0).play();       // get(0) gets the original DOM element
-      $('.item').unbind('click');  // remove click listener
-    });
-  });
-</script>
-<script>
-    new WOW().init();
-</script>
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='https://www.google-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-XXXXX-X');ga('send','pageview');
-</script>
-    <!-- the end -->
-  </body>
+    <script src="scripts/main.dbf075c8.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.item').click(function () {
+                $('#video-compoment').get(0).play(); // get(0) gets the original DOM element
+                $('.item').unbind('click'); // remove click listener
+            });
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
 </html>

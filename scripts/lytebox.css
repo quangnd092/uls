@@ -43,6 +43,7 @@
     text-align: center;
     line-height: 0;
     display: -moz-inline-stack;
+    margin-top:60px;
 }
 
 #lbMain a img {
