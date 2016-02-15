@@ -7273,7 +7273,6 @@ button.close {
     overflow: hidden;
     width: 100%;
     background-color: #25292e;
-    
 }
 
 .carousel-inner>.item {
@@ -7791,7 +7790,9 @@ input.form-control {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+    color: #b10001;
+    font-size:13px;
 }
 
 .fa-lg {
@@ -13583,7 +13584,7 @@ table.table-thead-vertical tbody {
 .section-slide-left .left-slide .carousel-inner {
     height: 180px;
     background-color: #fff;
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
 }
 
 .section-slide-left .left-slide .carousel-inner .item {
@@ -17044,7 +17045,7 @@ p {
 article {
     margin-bottom: 30px
 }
+
 #deafult-content {
-    margin-top:20px;
-    
+    margin-top: 20px;
 }
