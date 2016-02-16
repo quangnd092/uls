@@ -173,7 +173,7 @@
                         <div class="carousel-caption">
                             <h3 class="text-yellow wow fadeInDown" data-wow-duration="1.5s">UCR Advantages</h3>
                             <p class="text-white wow fadeInRightBig" data-wow-duration="1s">Use standard registration marks including unfilled circle, solid circle, crosshairs and combined crosshairs/circle.</p>
-                            <a class="btn btn-red btn-large wow fadeInRightBig get-sample" data-wow-duration="1.5s" href="#get-sample">Ask Question</a>
+                            <a class="btn btn-red btn-large wow fadeInRightBig ask-question" data-wow-duration="1.5s" href="#ask-question">Ask Question</a>
 
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                 </ul>
 
                 <div class="box-button top">
-                    <a class="ask-question" href="#ask-question">
+                    <a class="fullform" href="#fullform">
                         <button class="btn btn-red btn-large">Send Me Information</button>
                     </a>
 
@@ -400,7 +400,7 @@
         <!-- the end -->
 
         <!-- form get sample -->
-        <form id="get-sample" class="mfp-hide">
+        <form id="ask-question" class="mfp-hide">
             <img src="images/contact/close.png" class="mfp-close">
             <div class="wrap-box-contact">
                 <div class="top-title" style="padding:10px;">
@@ -412,7 +412,7 @@
                 <div class="main-box">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox"> Ask Questions
+                            <input type="checkbox" checked> Ask Questions
                         </label>
                     </div>
                     <div class="checkbox">
@@ -460,98 +460,91 @@
         <!-- end -->
 
         <!-- form ask questions -->
-        <form id="ask-question" class="mfp-hide">
+        <form id="fullform" class="mfp-hide">
             <img src="images/contact/close.png" class="mfp-close">
             <div class="wrap-box-contact">
-                
+
                 <div class="top-title" style="padding:10px;">
                     <h5 class="text-white text-center">
               CONTACT INFORMATION
             </h5>
                 </div>
-                
- 
-                
+                <section class="form wrap-main-content container">
+                    <div class="contact-form col-lg-8 col-md-8 col-sm-8">
+                        <form action="">
+                            <div class="wrap-box-contactxx">
 
 
+                                <div class="main-box">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">First Name <span class="key">*</span></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email <span class="key">*</span></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Country</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Country">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Telephone</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Telephone">
+                                        </div>
+                                    </div>
 
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Last Name <span class="key">*</span></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">City <span class="key">*</span></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="City">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">State/Province</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="State/Province<">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Company Name</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Company Name">
+                                        </div>
+                                    </div>
 
-                    <section class="form wrap-main-content container">
-            <div class="contact-form col-lg-8 col-md-8 col-sm-8">
-                <form action="">
-                    <div class="wrap-box-contactxx">
-                       
+                                    <div class="clearfix"></div>
 
-                        <div class="main-box">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">First Name <span class="key">*</span></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First Name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email <span class="key">*</span></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Country</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Country">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Telephone</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Telephone">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Please mail me product information.
+                                        </label>
+                                    </div>
+
+                                    <div class="wrap-question-comment">
+                                        <label class="title-text-area" for="">Questions or Comments:</label>
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </div>
+
+                                    <div class="action-button">
+                                        <button class="btn btn-red btn-large">
+                                            SUBMIT
+                                        </button>
+                                    </div>
+
                                 </div>
                             </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Last Name <span class="key">*</span></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">City <span class="key">*</span></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="City">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">State/Province</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="State/Province<">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Company Name</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Company Name">
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Please mail me product information.
-                                </label>
-                            </div>
-
-                            <div class="wrap-question-comment">
-                                <label class="title-text-area" for="">Questions or Comments:</label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                            </div>
-
-                            <div class="action-button">
-                                <button class="btn btn-red btn-large">
-                                    SUBMIT
-                                </button>
-                            </div>
-
-                        </div>
+                        </form>
                     </div>
-                </form>
-            </div>
 
-           
 
-            <div class="clearfix"></div>
-        </section>
-                    
 
-                
+                    <div class="clearfix"></div>
+                </section>
+
+
+
             </div>
         </form>
         <!-- end -->

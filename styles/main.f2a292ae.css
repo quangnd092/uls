@@ -12097,7 +12097,7 @@ p.text {
     position: relative
 }
 
-#ask-question {
+#fullform {
     width: 673px;
     margin: auto;
     padding: 10px;
@@ -12112,7 +12112,7 @@ p.text {
     border-bottom: 1px solid #e5e5e5
 }
 
-
+#fullform .mfp-close,
 #get-sample .mfp-close,
 #see-demo .mfp-close,
 #test-material .mfp-close,
