@@ -12083,11 +12083,22 @@ p.text {
     border: 2px solid #ddd
 }
 
-#ask-question,
+
 #get-sample,
 #see-demo,
-#test-material {
+#test-material,
+#ask-question {
     width: 400px;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative
+}
+
+#ask-question {
+    width: 673px;
     margin: auto;
     padding: 10px;
     background: #fff;
@@ -12101,10 +12112,11 @@ p.text {
     border-bottom: 1px solid #e5e5e5
 }
 
-#ask-question .mfp-close,
+
 #get-sample .mfp-close,
 #see-demo .mfp-close,
-#test-material .mfp-close {
+#test-material .mfp-close,
+#ask-question .mfp-close {
     width: auto;
     height: auto;
     opacity: 1;
@@ -12114,10 +12126,11 @@ p.text {
 }
 
 @media only screen and (max-width:450px) {
-    #ask-question,
+    
     #get-sample,
     #see-demo,
-    #test-material {
+    #test-material,
+    #ask-question {
         width: 300px
     }
 }
