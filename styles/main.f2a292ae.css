@@ -10183,7 +10183,8 @@ header .box-logo h1 img {
 }
 
 header .box-search {
-    padding: 10px
+    padding: 10px;
+    visibility: hidden;
 }
 
 header .box-search .form-group {
@@ -12076,13 +12077,12 @@ p.text {
 }
 
 .form-group {
-    margin-bottom: 26px
+    margin-bottom: 26px;
 }
 
 #map-canvas {
     border: 2px solid #ddd
 }
-
 
 #get-sample,
 #see-demo,
