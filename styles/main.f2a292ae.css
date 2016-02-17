@@ -10184,7 +10184,6 @@ header .box-logo h1 img {
 
 header .box-search {
     padding: 10px;
-    visibility: hidden;
 }
 
 header .box-search .form-group {
@@ -14457,6 +14456,22 @@ tr:nth-child(even) {
     padding: 10px;
     font-weight: 400;
     text-align: center;
-    color:#fff;
+    color: #fff;
     font-size: 18px;
 }
+/*
+.thumbnail :hover::after {
+    content: "";
+    display: block;
+    width: 257px;
+    border-bottom: 5px solid #ba0001;
+    margin: 0 auto;
+    top: -60px;
+    position: relative;
+}
+
+@media (max-device-width:480px) and (orientation:landscape) {
+    .thumbnail: hover:: after {
+        display: none;
+    }
+}*/
