@@ -11827,6 +11827,10 @@ section.step .wrap-step .tab-content .right .bottom-step p.text {
     margin-top: 20px
 }
 
+.top-step p.text {
+    margin-top: 10px!important;
+}
+
 section.step .wrap-step .tab-content .left .slide .carousel-control span:before {
     color: #D8D8D8
 }
@@ -14459,6 +14463,8 @@ tr:nth-child(even) {
     color: #fff;
     font-size: 18px;
 }
+
+
 /*
 .thumbnail :hover::after {
     content: "";
