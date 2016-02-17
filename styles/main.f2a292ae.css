@@ -10690,8 +10690,8 @@ table.table-thead-vertical {
 
 table.table-thead-vertical td,
 table.table-thead-vertical th {
-    border: none!important;
-    border-bottom: 1px solid #d9d9d9!important
+    border: 1px solid #d9d9d9!important;
+    /*border-bottom: 1px solid #d9d9d9!important*/
 }
 
 table.table-thead-vertical thead {
@@ -14436,4 +14436,26 @@ article {
 .fa {
     color: #ba0001;
     font-size: 12px;
+}
+
+.tg {
+    font-weight: bold;
+}
+
+.tablespecs {
+    margin-top: 20px;
+    border: 1px solid #ba0001;
+}
+
+tr:nth-child(even) {
+    background-color: #F6F1F0!important;
+}
+
+.tabletitle {
+    background-color: #ba0001;
+    padding: 10px;
+    font-weight: 400;
+    text-align: center;
+    color:#fff;
+    font-size: 18px;
 }
