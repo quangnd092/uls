@@ -14464,20 +14464,35 @@ tr:nth-child(even) {
     font-size: 18px;
 }
 
-
-/*
-.thumbnail :hover::after {
-    content: "";
-    display: block;
-    width: 257px;
-    border-bottom: 5px solid #ba0001;
+.portal-image:hover img {
+    border-bottom: 5px solid #920606;
     margin: 0 auto;
-    top: -60px;
-    position: relative;
+    position: absolute;
+    top: 5px!important;
+    width:270px;
+  
+    
+    
+}
+/*
+.portal-image:hover img{
+    
+    filter: gray; 
+    -webkit-filter: grayscale(1);
+  
+    
+    
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
-    .thumbnail: hover:: after {
-        display: none;
-    }
+.portalbox:hover p{
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+    
+    
+}
+.portalbox:hover h4{
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+    
+    
 }*/
