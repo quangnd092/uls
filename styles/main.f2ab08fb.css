@@ -14643,3 +14643,9 @@ p {
 article {
     margin-bottom: 30px
 }
+
+.fa {
+    color: #ba0001;
+    font-size: 12px;
+    margin-right: 5px;
+}
