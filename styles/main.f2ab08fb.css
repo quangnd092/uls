@@ -12078,7 +12078,8 @@ p.text {
 
 #get-sample,
 #see-demo,
-#test-material {
+#test-material,
+#ask-question {
     width: 400px;
     margin: auto;
     padding: 10px;
@@ -12088,9 +12089,21 @@ p.text {
     position: relative
 }
 
+#fullform {
+    width: 673px;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative
+}
+
+#fullform .mfp-close,
 #get-sample .mfp-close,
 #see-demo .mfp-close,
-#test-material .mfp-close {
+#test-material .mfp-close,
+#ask-question .mfp-close {
     width: auto;
     height: auto;
     opacity: 1;
