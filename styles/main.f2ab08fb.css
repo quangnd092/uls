@@ -14630,3 +14630,13 @@ p {
 article {
     margin-bottom: 30px
 }
+.portalbottom :hover h4 {
+    
+    color:#ba0001;
+    
+}
+.portalbottom :hover p {
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+    
+}
