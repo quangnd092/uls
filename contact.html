@@ -1,0 +1,473 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+  <title>Contact Us</title>
+  
+    <meta charset="utf-8">
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw5uR1gaKG3AaDuDrVYa6QaE47n03Td_o"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/css/lightslider.min.css" />
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.1/magnific-popup.min.css">
+    <!-- end -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+    <link rel="stylesheet" href="styles/main.f2ab08fb.css">
+    <script src="scripts/vendor/modernizr.caa1706e.js"></script>
+ 
+  </head>
+  <body>
+    <script type="text/javascript">
+             
+    // The following example creates complex markers to indicate beaches near
+    // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
+    // to the base of the flagpole.
+
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 1,
+        center: {lat: 0, lng: 0}
+      });
+
+      setMarkers(map);
+    }
+
+    // Data for the markers consisting of a name, a LatLng and a zIndex for the
+    // order in which these markers should display on top of each other.
+    var beaches = [
+      ['Bondi Beach', -10, -50, 3],
+      ['Coogee Beach', -20, 30, 2],
+      ['Cronulla Beach', -5, 150, 1],
+    ];
+
+    function setMarkers(map) {
+      // Adds markers to the map.
+
+      // Marker sizes are expressed as a Size of X,Y where the origin of the image
+      // (0,0) is located in the top left of the image.
+
+      // Origins, anchor positions and coordinates of the marker increase in the X
+      // direction to the right and in the Y direction down.
+      var image = {
+        url: 'images/page/google-icon-black.png',
+      };
+      // Shapes define the clickable region of the icon. The type defines an HTML
+      // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+      // The final coordinate closes the poly by connecting to the first coordinate.
+      // var shape = {
+      //   coords: [1, 1, 1, 20, 18, 20, 18, 1],
+      //   type: 'poly'
+      // };
+      for (var i = 0; i < beaches.length; i++) {
+        var beach = beaches[i];
+        var marker = new google.maps.Marker({
+          position: {lat: beach[1], lng: beach[2]},
+          map: map,
+          icon: image,
+          // shape: shape,
+          title: beach[0],
+          zIndex: beach[3]
+        });
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initMap);
+</script>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <!-- start header block-->
+    <header>
+  <div class="container header">
+    <div class="col-xs-6 col-md-6 box-logo">
+      <h1><a href="index.html"><img src="images/page/uls_logo.png" alt="ulslogo"></a></h1>
+    </div>
+    <div class="col-xs-6 col-md-6 text-right box-search">
+      <div class="form-group">
+        <select name="" style="display: none">
+          <option value="">English</option>
+          <option value="">Español</option>
+          <option value="">Francais</option>
+          <option value="">Deutsch</option>
+          <option value="">Portugues</option>
+          <option value="">Italiano</option>
+        </select>
+      </div>
+      <div class="form-group box-option">
+        <input type="text" class="form-control" placeholder="Search...">
+        <button class="btn btn-default">Search</button>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</header>
+    <!-- the end header block-->
+    
+    <!-- start block navibar -->
+    <nav class="navbar">
+    <div class="container">
+
+      <!-- start navibar header only display in mobile -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#list-menu" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- logo and button toggle box search -->
+        <a href=""  class="logo visible-xs"><img src="images/page/uls_logo.png" alt="ulslogo"></a>
+        <button type="button" class="navbar-toggle collapsed btn-search" data-toggle="collapse" data-target="#list-option" aria-expanded="false">
+          <i class="fa fa-search"></i>
+        </button>
+        <!-- the end -->
+      </div>
+      <!-- the end -->
+      
+      <!-- start box search display in mobile -->
+      <div class="collapse navbar-collapse" id="list-option">
+        <div class="visible-xs box-search">
+          <div class="box-option">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button class="btn btn-default">Search</button>
+          </div>
+        </div>
+      </div>
+      <!-- the end -->
+      
+      <!-- start list navibar -->
+            <div class="collapse navbar-collapse" id="list-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="newsroom.html">Newsroom</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="component-detail.html">Building Blocks</a></li>
+                            <li><a href="innovative-technology.html">ULS Innovative Technology</a></li>
+                            <li><a href="configure.html">Configure Your ULS Laser System</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materials</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="wood.html">Wood</a></li>
+                            <li><a href="microsurface-plastic.html">Microsurface Plastic</a></li>
+                            <li><a href="3M-MPF.html">3M™ Microcellular Polyurethane Foam</a></li>
+                            <li><a href="3M-Protection-Film.html">3M™ Protection Film</a></li>
+                            <li><a href="halar.html">Halar®</a></li>
+                            <li><a href="kapton.html">Kapton® Polyimide Film</a></li>
+                            <li><a href="viton.html">Viton® Fluoroelastomer</a></li>
+                            <li><a href="material.html">Teflon® Fluoropolymer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="material-processing.html">Advanced Materials Processing Center</a></li>
+                            <li><a href="how-to-guide.html">How to Guides</a></li>
+                            <li><a href="laser-safety.html">Laser Safety</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How to Buy</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="find-representative.html">Find a representative</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="software-download.html">Software Downloads</a></li>
+                            <li><a href="user-guide.html">User Guides</a></li>
+                            <li><a href="warranty-information.html">Warranty Information</a></li>
+                            <li><a href="service-programs.html">Service Programs</a></li>
+                            <li><a href="contact-services.html">Contact Service</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- the end list navibar -->
+
+    </div>
+</nav>
+    <!-- the end navibar block -->
+    
+    <!-- start content block -->
+    <div id="content">
+      <!-- start header with background red -->
+      <section class="header-title red">
+  <div class="container">
+    <div class="wrap-title">
+      <h3 class="text-white">Contact Universal Laser Systems</h3>
+      <h5 class="text-white">To speak with a Universal expert, call us or fill out the form below.</h5>
+    </div>
+    <div class="wrap-image">
+      <img src="images/contact/map_opacity.png">
+    </div>
+  </div>
+</section>
+      <!-- the end -->
+
+      <!-- start box load google map -->
+      <section class="top-map">
+<div class="wrap-content container">
+  <div id="map-canvas" style="height: 288px;"></div>
+</div>
+</section>
+      <!-- the end -->
+      <!-- start box list location -->
+      <section class="list-location">
+  <div class="container">
+    <article class="col-md-4 location">
+      <img src="images/page/google-icon.png">
+      <h4>World Headquarters</h4>
+      <p>7845 East Paradise Lane</p>
+      <p>Scottsdale, AZ 85260</p>
+      <p>(800) 859-7033 U.S</p>
+      <p>(480)483-1214 Global</p>
+
+    </article>
+    <article class="col-md-4 location">
+      <img src="images/page/google-icon.png">
+      <h4>Europe</h4>
+      <p>Lerchenfelder Gürtel 43</p>
+      <p>1160 Vienna, Austria </p>
+      <p>+43 1-402-22-50 Europe</p>
+    </article>
+    <article class="col-md-4 location">
+      <img src="images/page/google-icon.png">
+      <h4>Japan</h4>
+      <p>The Yokohama Landmark </p>
+      <p>Tower 220-8115</p>
+      <p>Yokohama, Japan</p>
+      <p>+81 45-224-2279 Japan</p>
+    </article>
+    <div class="clearfix"></div>
+  </div>  
+</section>
+      <!-- the end -->
+      <!-- start box form -->
+      <section class="form wrap-main-content container">
+    <div class="contact-form col-lg-8 col-md-8 col-sm-8">
+      <form action="">
+        <div class="wrap-box-contact">
+          <div class="top-title">
+            <h5 class="text-white">
+              CONTACT INFORMATION
+            </h5>
+          </div>
+
+          <div class="main-box">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">First Name <span class="key">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email <span class="key">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Country</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Telephone</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Last Name <span class="key">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">City <span class="key">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">State/Province</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Company Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Please mail me product information.
+              </label>
+            </div>
+
+            <div class="wrap-question-comment">
+              <label class="title-text-area" for="">Questions or Comments:</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="action-button">
+              <button class="btn btn-red btn-large">
+                SUBMIT
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="privacy-policy col-lg-4 col-md-4 col-sm-4 padding-none">
+      <div>
+
+          <div>
+              <a href="privacy-policy.html">
+                  <button class="btn btn-black btn-large">Privacy Policy</button>
+              </a>
+          </div>
+
+          <div class="main-box">
+
+          </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+</section>
+      <!-- the end -->
+    </div>
+    <!-- the end block content -->
+    
+    <!-- start footer block -->
+   <footer>
+    <!-- start footer navigation block -->
+    <section class="footer-navigation top">
+      <div class="container">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation"> 
+          <ul class="list-unstyled">
+            <li><strong><a href="">About Us</a></strong></li>
+            <li><a href="">History</a></li>
+            <li><a href="">Newsroom</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+          <ul class="list-unstyled">
+            <li><strong><a href="">Products</a></strong> </li>
+            <li><a href="">Building Blocks</a></li>
+            <li><a href="">ULS Innovative <span>Technology</span></a></li>
+            <li> <a href="">Configure Your <span>ULS Laser System</span></a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+          <ul class="list-unstyled">
+            <li><strong><a href="">Resources</a></strong></li>
+            <li><a href="">Advanced Materials <span>Processing Center</span></a></li>
+            <li><a href="">How to Guides</a></li>
+            <li><a href="">Laser Safety</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+          <ul class="list-unstyled">
+            <li><strong><a href="">How to Buy</a></strong></li>
+            <li><a href="">Find a representative</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+          <ul class="list-unstyled">
+            <li><strong><a href="">Services & Support</a></strong></li>
+            <li><a href="">Software Downloads</a></li>
+            <li><a href="">User Guides</a></li>
+            <li><a href="">Warranty Information</a></li>
+            <li><a href="">Service Programs</a></li>
+            <li><a href="">Contact Service</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 list-navigation">
+          <ul class="list-unstyled">
+            <li><strong><a href="">Contact</a></strong></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <!-- the end -->
+    
+    <!-- start copyright block -->
+    <section class="copyright bottom">
+      <div class="container text-center">
+        <!-- socsial -->
+        <div class="social">
+          <a href=""><img src="images/page/google_logo.png" alt="google+"></a>
+          <a href=""><img src="images/page/linkedIn_logo.png" alt="linkedln+"></a>
+        </div>
+        <!-- the end -->
+
+        <!-- laguage -->
+        <div class="language-footer">  
+          <img src="images/page/united-states-flag-icon.png" alt="united-states-flag-icon">
+          <span>United States - Change Country or Region</span>
+        </div>
+        <!-- the end -->
+
+        <div class="logo-small">
+          <h5><img src="images/page/uls_logo_small.png" alt="logo"></h5>
+        </div>
+        
+        <!-- copyright -->
+        <div class="copyright-content">
+          
+          <p class="copyright-text">© 2016 Universal Laser Systems, Inc. All rights reserved. Universal Laser Systems logo and name are registered trademarks of Universal Laser Systems, Inc. All other company and product names are trademarks or registered trademarks of their respective companies.</p>
+
+          <ul class="copyright-link list-inline">
+            <li>
+              <a href="">Terms of Use </a> |    
+            </li>
+            <li>
+              <a href="">Privacy Policy</a>  |
+            </li>
+            <li>
+              <a href="">Site Map</a>  |
+            </li>
+            <li>
+              <a href="">Configure Your Laser System </a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- the end -->
+      </div>
+    </section>
+    <!-- the end -->
+</footer>
+    <!-- the end footer block -->
+
+    <!-- script -->
+    <script src="scripts/vendor.2046b4fb.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+<script src="scripts/plugins.bde8e777.js"></script>
+
+
+<script src="scripts/main.8760756f.js"></script>
+
+    <!-- the end -->
+  </body>
+</html>
