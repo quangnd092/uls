@@ -12149,7 +12149,7 @@ p.text {
 .main-content {
     z-index: 2;
     padding-bottom: 50px;
-    background: #ececec;
+    /*background: #ececec;*/
     border-top: 4px solid #fff;
     padding-top: 30px
 }
