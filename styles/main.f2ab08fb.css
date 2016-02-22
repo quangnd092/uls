@@ -10695,7 +10695,8 @@ table.table-thead-vertical {
 
 table.table-thead-vertical td,
 table.table-thead-vertical th {
-    border: none!important;
+    border: 1px solid #d9d9d9!important;
+    /*border: none!important;*/
     border-bottom: 1px solid #d9d9d9!important
 }
 
@@ -14648,4 +14649,34 @@ article {
     color: #ba0001;
     font-size: 12px;
     margin-right: 5px;
+}
+
+.tg {
+    font-weight: bold;
+}
+
+.tablespecs {
+    margin-top: 20px;
+    border: 1px solid #ba0001;
+}
+
+tr:nth-child(even) {
+    background-color: #F6F1F0!important;
+}
+
+.tabletitle {
+    background-color: #ba0001;
+    padding: 10px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.portal-image:hover img {
+    border-bottom: 5px solid #920606;
+    margin: 0 auto;
+    position: absolute;
+    top: 5px!important;
+    width: 270px;
 }
