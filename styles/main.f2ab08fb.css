@@ -14680,3 +14680,7 @@ tr:nth-child(even) {
     top: 5px!important;
     width: 270px;
 }
+
+.eventsmap {
+    margin-top: 10px;
+}
