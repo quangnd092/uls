@@ -10891,11 +10891,11 @@ table.table-thead-vertical tbody {
 
 .section-slide-left .left-slide .lSSlideOuter .lSPager.lSGallery li {
     width: 25%!important;
-    height: 60px;
+    height: 54px;
     border: 2px solid #fff;
     margin-right: 0!important;
     position: relative;
-    background: #252525;
+    background: #fff;
     border-radius: 0!important
 }
 
