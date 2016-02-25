@@ -7257,7 +7257,8 @@ button.close {
 
 .carousel-inner {
     overflow: hidden;
-    width: 100%
+    width: 100%;
+    background-color: #25292e;
 }
 
 .carousel-inner>.item {
@@ -14715,7 +14716,6 @@ section.list-portrait-portals .portrait-portal {
     margin-left: 20px;
     margin-right: 20px;
     padding: 0px;
-    
 }
 section.list-portrait-portals .portrait-portal-container-3 {
     max-width: 1165px;
@@ -14738,3 +14738,55 @@ section.list-portrait-portals .portrait-portal .caption {
     margin-bottom: 40px;
     border-radius: 0;
 }
+.component-item {
+    height: 300px;
+    width: 209px;
+    box-sizing: border-box;
+    border: 1px solid #2f353a;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+.component-item img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.component-item h5 {
+    margin-bottom: 10px;
+}
+section .component-title {
+    margin-left: 15px;
+    padding: 5px;
+}
+.component-item:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    /* For IE8 and earlier */
+}
+.uniquely {
+    position: absolute;
+    width: 25px;
+    top: 0px;
+    left: 183px;
+}
+.legendicon::before {
+    content: url(../images/component-detail/uniquelyIcon.png);
+    margin-right: 5px;
+}
+/* this feature add an icon on accessories
+.iconplatform {
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.iconplatform img{
+    width: 40px;
+
+}
+this add mouseove effects on platform series page
+.portrait-portal img:hover {
+    opacity: 0.90;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
