@@ -12223,6 +12223,28 @@ p.text {
     display: inline-block
 }
 
+
+
+/*This for the customer stories */
+.main-content .wrap-group-option2 .group-checked .text-more.collapsed .closecontent  {
+    display: none
+}
+.main-content .wrap-group-option2 .group-checked .text-more .closecontent ,
+.main-content .wrap-group-option2 .group-checked .text-more.collapsed .opencontent {
+    display: block
+}
+.main-content .wrap-group-option2 .group-checked .text-more .opencontent {
+    display: none
+}
+/* End */
+.main-content h3, .main-content h2{
+    margin-bottom:18px;
+}
+
+
+
+
+
 .main-content .wrap-group-option .group-checked .form-group {
     margin-bottom: 0
 }
