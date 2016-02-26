@@ -14730,7 +14730,7 @@ tr:nth-child(even) {
     margin-bottom: 7px;
 }
 section.list-portrait-portals .portrait-portal {
-    height: 280px;
+    height: 306px;
     width: 243px;
     box-sizing: border-box;
     border: 1px solid #2f353a;
@@ -14761,7 +14761,7 @@ section.list-portrait-portals .portrait-portal .caption {
     border-radius: 0;
 }
 .component-item {
-    height: 300px;
+    height: 330px;
     width: 209px;
     box-sizing: border-box;
     border: 1px solid #2f353a;
@@ -14777,6 +14777,11 @@ section.list-portrait-portals .portrait-portal .caption {
 .component-item h5 {
     margin-bottom: 10px;
 }
+.seemore {
+    position: absolute;
+    right: 57px;
+    bottom: 10px;
+}
 section .component-title {
     margin-left: 15px;
     padding: 5px;
@@ -14785,6 +14790,9 @@ section .component-title {
     opacity: 0.7;
     filter: alpha(opacity=70);
     /* For IE8 and earlier */
+    
+    outline: 1px solid #000;
+    
 }
 .uniquely {
     position: absolute;
@@ -14796,6 +14804,18 @@ section .component-title {
     content: url(../images/component-detail/uniquelyIcon.png);
     margin-right: 5px;
 }
+.legendicon {
+    margin-bottom: 10px;
+}
+
+#platform-inactive {
+    opacity: 0.7; 
+    filter: alpha(opacity=70);      
+}
+#platform-active {
+    outline: 2px solid #ba0001;   
+}
+
 /* this feature add an icon on accessories
 .iconplatform {
     text-align: center;
