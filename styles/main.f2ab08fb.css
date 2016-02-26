@@ -1913,8 +1913,8 @@ abbr[title] {
 blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 5px solid #eee
+    font-size: 14px;
+    border-left: 5px solid #eee;
 }
 
 blockquote .small,
@@ -12224,26 +12224,28 @@ p.text {
 }
 
 
-
 /*This for the customer stories */
-.main-content .wrap-group-option2 .group-checked .text-more.collapsed .closecontent  {
+
+.main-content .wrap-group-option2 .group-checked .text-more.collapsed .closecontent {
     display: none
 }
-.main-content .wrap-group-option2 .group-checked .text-more .closecontent ,
+
+.main-content .wrap-group-option2 .group-checked .text-more .closecontent,
 .main-content .wrap-group-option2 .group-checked .text-more.collapsed .opencontent {
     display: block
 }
+
 .main-content .wrap-group-option2 .group-checked .text-more .opencontent {
     display: none
 }
+
+
 /* End */
-.main-content h3, .main-content h2{
-    margin-bottom:18px;
+
+.main-content h3,
+.main-content h2 {
+    margin-bottom: 18px;
 }
-
-
-
-
 
 .main-content .wrap-group-option .group-checked .form-group {
     margin-bottom: 0
@@ -14792,7 +14794,6 @@ section .component-title {
     /* For IE8 and earlier */
     
     outline: 1px solid #000;
-    
 }
 .uniquely {
     position: absolute;
@@ -14807,17 +14808,36 @@ section .component-title {
 .legendicon {
     margin-bottom: 10px;
 }
-
 #platform-inactive {
-    opacity: 0.7; 
-    filter: alpha(opacity=70);      
+    opacity: 0.7;
+    filter: alpha(opacity=70);
 }
 #platform-inactive:hover {
-    outline: 1px solid #000;    
+    outline: 1px solid #000;
 }
 #platform-active {
-    outline: 2px solid #ba0001;   
+    outline: 2px solid #ba0001;
 }
+.customer-name {
+    margin-top: 20px;
+    font-weight: 600;
+}
+.customer-company, .customer-address {
+    font-style: italic;
+    font-weight: 400;
+}
+.testimonials {
+    margin-left: 80px;
+}
+.testimonials:before {
+    font-family: fontawesome;
+    content: "\F10D";
+    font-size: 52px;
+    color: #E4E4E4;
+    position: absolute;
+    left: 12px;
+}
+
 
 /* this feature add an icon on accessories
 .iconplatform {
