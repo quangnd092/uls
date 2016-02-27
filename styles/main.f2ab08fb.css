@@ -14758,6 +14758,10 @@ section.list-portrait-portals .portrait-portal .caption {
     border-radius: 0;
 }
 .line {
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+.line-divider {
     border-bottom: 1px solid #ccc;
     margin-bottom: 40px;
     border-radius: 0;
@@ -14822,7 +14826,8 @@ section .component-title {
     margin-top: 20px;
     font-weight: 600;
 }
-.customer-company, .customer-address {
+.customer-company,
+.customer-address {
     font-style: italic;
     font-weight: 400;
 }
@@ -14837,7 +14842,6 @@ section .component-title {
     position: absolute;
     left: 12px;
 }
-
 
 /* this feature add an icon on accessories
 .iconplatform {
