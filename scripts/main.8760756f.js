@@ -48,7 +48,7 @@ $(document).ready(function () {
                 this.st.focus = $(window).width() < 700 ? !1 : "#FirstName"
             }
         }
-    }), $(".see-demo, .test-material, .get-sample, .ask-question, .fullform, .video1, .video2, .video3").magnificPopup({
+    }), $(".see-demo, .test-material, .get-sample, .ask-question, .fullform, .video1, .video2, .video3 ").magnificPopup({
         type: "inline",
         focus: "#FirstName",
         callbacks: {

@@ -12101,15 +12101,16 @@ p.text {
     border-radius: 10px;
     position: relative
 }
-#video1 {
+
+#video1,
+#video2,
+#video3 {
     width: 925px;
     margin: auto;
-    padding: 2px;
     background: trasparent;
-    border: 2px solid #000;
-
     position: relative
 }
+
 #video1 .mfp-close,
 #video2 .mfp-close,
 #video3 .mfp-close,
@@ -12128,6 +12129,8 @@ p.text {
 
 @media only screen and (max-width:450px) {
     #video1,
+    #video2,
+    #video3,
     #fullform,
     #get-sample,
     #see-demo,
@@ -14879,20 +14882,3 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 .explore:hover {
     outline: 3px solid #4c4c4c;
 }
-
-/* this feature add an icon on accessories
-.iconplatform {
-    text-align: center;
-    padding-top: 10px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.iconplatform img{
-    width: 40px;
-
-}
-this add mouseove effects on platform series page
-.portrait-portal img:hover {
-    opacity: 0.90;
-    filter: alpha(opacity=90); /* For IE8 and earlier */
