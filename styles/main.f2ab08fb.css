@@ -12101,7 +12101,18 @@ p.text {
     border-radius: 10px;
     position: relative
 }
+#video1 {
+    width: 925px;
+    margin: auto;
+    padding: 2px;
+    background: trasparent;
+    border: 2px solid #000;
 
+    position: relative
+}
+#video1 .mfp-close,
+#video2 .mfp-close,
+#video3 .mfp-close,
 #fullform .mfp-close,
 #get-sample .mfp-close,
 #see-demo .mfp-close,
@@ -12116,6 +12127,8 @@ p.text {
 }
 
 @media only screen and (max-width:450px) {
+    #video1,
+    #fullform,
     #get-sample,
     #see-demo,
     #test-material {
