@@ -11441,6 +11441,9 @@ section.list-material .material .thumbnail .material-caption p {
         font-weight: 600;
         margin-bottom: 0
     }
+    .right-nav {
+    padding-left: 0px!important;
+}
 }
 
 .align-top {
