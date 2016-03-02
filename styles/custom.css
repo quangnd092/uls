@@ -199,9 +199,6 @@ section.evaluate-tab-info .container .text {
 .history-content {}
 
 
-
-
-
 /*! Start Rowboat Designer Style */
 
 .tg {
@@ -874,4 +871,19 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
     .main-content .container {
         width: 1000px
     }
+}
+
+.portalbottom :hover {
+    border-bottom: 3px solid #ba0001;
+    background: #dedede;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.portalbottom h4:hover,
+.portalbottom p:hover {
+    outline: none;
+    border-bottom: none;
 }
