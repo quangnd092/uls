@@ -1,5 +1,6 @@
+@charset "UTF-8";
 
-/* Start Universal Style*/
+/*! Start Universal Style*/
 
 .software-downloads-outer {
     max-width: 960px;
@@ -80,6 +81,7 @@ section.list-portrait-portals .portrait-portal {
 
 section.list-portrait-portals .portrait-portal:hover {
     background-color: #FEFEFE;
+    outline: 3px solid #4c4c4c;
 }
 
 section.list-portrait-portals se .portrait-portal .portrait-portal-image {
@@ -197,10 +199,10 @@ section.evaluate-tab-info .container .text {
 .history-content {}
 
 
-/* End ULS Style */
 
 
-/* Start Rowboat Designer Style */
+
+/*! Start Rowboat Designer Style */
 
 .tg {
     font-weight: bold;
