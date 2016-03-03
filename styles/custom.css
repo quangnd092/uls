@@ -326,7 +326,9 @@ section .component-title {
 }
 
 .component-item:hover {
-    outline: 3px solid #4c4c4c;
+    outline: 3px solid #ccc;
+    border:1px solid #ccc;
+    
 }
 
 .uniquely {
@@ -405,6 +407,7 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 
 .explore:hover {
     outline: 3px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 .imagefloatright {
@@ -747,7 +750,8 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 }
 
 .bottom-content {
-    padding: 35px 0
+    padding: 35px 0;
+    margin-bottom: 20px;
 }
 
 .bottom-content .wrap-list-bottom {
@@ -763,7 +767,7 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 .bottom-content .wrap-list-bottom .list-bottom .item {
     text-align: center;
     width: 165px;
-    height: 200px;
+    height: 160px;
     float: left;
     padding: 20px 10px;
     border-left: 1px solid #ddd
@@ -874,8 +878,9 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 }
 
 .portalbottom :hover {
+    /*!--outline: 3px solid #ccc;*/
     border-bottom: 3px solid #ba0001;
-    background: #dedede;
+    background: #f9f9f9;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     -webkit-transition-timing-function: ease-out;
