@@ -939,7 +939,7 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
     }
 }
 
-.portalbottom:hover {
+.portalbottom :hover {
     /*!--outline: 3px solid #ccc;*/
     border-bottom: 3px solid #ba0001;
     background: #f9f9f9;
@@ -959,6 +959,8 @@ figure p.text-description {
     font-size: 12px;
     padding-top: 5px;
 }
+
+/*! added on 3-4-16 */
 
 .left-slide .lSSlideOuter .lSPager.lSGallery li {
     background: #fff!important;
@@ -989,3 +991,107 @@ figure p.text-description {
 .component-item-expand h5 {
     margin-bottom: 10px;
 }
+
+/*! from CMS 3-4-16 */
+
+section.list-portrait-products {
+    margin-bottom: 20px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.list-portrait-products-small {
+    width: 283px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-portrait-products-medium {
+    width: 566px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-portrait-products-large {
+    width: 849px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portrait-product {
+    width: 243px;
+    box-sizing: border-box;
+    border: 1px solid #2f353a;
+    height: 280px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.portrait-product:hover {
+    background-color: #FEFEFE;
+    outline: 3px solid #CCCCCC;
+    border: 1px solid #CCCCCC;
+}
+
+.product-portal-image {
+    position: relative;
+    height: 150px
+}
+
+.portrait-product .product-caption {
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.portrait-product .product-caption h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+
+.portrait-product .product-caption h5 {
+    font-size: 14px;
+    line-height: 1.2;
+    padding-bottom: 5px;
+}
+
+.portrait-product .product-caption p {
+    font-size: 12px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+
+.section-slide-left-schematic {
+    clear: both;
+    padding-top: 10px;
+}
+
+.list-text i {
+    margin-right: 5px;
+}
+
+.list-text h5 {
+    padding-bottom: 3px;
+}
+
+table.tablespecs td {
+    font-size: 14px;
+    width: 50%;
+}
+
+table.tablespecs td.tabletitle {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+}
+
+table.tablespecs {
+    width: 100%;
+}
+
+
