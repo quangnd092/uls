@@ -1,5 +1,44 @@
 @charset "UTF-8";
 
+/*! Extra Bootstrap */
+
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+
 /*! Start Universal Style*/
 
 .software-downloads-outer {
@@ -303,6 +342,8 @@ section.list-portrait-portals .portrait-portal .caption {
     margin-left: 20px;
     margin-right: 20px;
     padding: 5px;
+    overflow-y: scroll;
+    cursor: pointer;
 }
 
 .component-item img {
@@ -320,6 +361,10 @@ section.list-portrait-portals .portrait-portal .caption {
     bottom: 10px;
 }
 
+.seemore2 {
+    margin-top: 20px;
+}
+
 section .component-title {
     margin-left: 15px;
     padding: 5px;
@@ -327,8 +372,7 @@ section .component-title {
 
 .component-item:hover {
     outline: 3px solid #ccc;
-    border:1px solid #ccc;
-    
+    border: 1px solid #ccc;
 }
 
 .uniquely {
@@ -420,7 +464,7 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .titlespace {
@@ -498,6 +542,20 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
     position: relative
 }
 
+#component-popup {
+    width: 673px;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    position: relative;
+    min-height: 300px;
+}
+
+#component-img {
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+
 #video1,
 #video2,
 #video3 {
@@ -507,6 +565,7 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
     position: relative
 }
 
+#component-popup .mfp-close,
 #video1 .mfp-close,
 #video2 .mfp-close,
 #video3 .mfp-close,
@@ -524,6 +583,7 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 }
 
 @media only screen and (max-width:450px) {
+    #component-popup,
     #video1,
     #video2,
     #video3,
@@ -877,7 +937,7 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
     }
 }
 
-.portalbottom :hover {
+.portalbottom:hover {
     /*!--outline: 3px solid #ccc;*/
     border-bottom: 3px solid #ba0001;
     background: #f9f9f9;
@@ -891,4 +951,39 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 .portalbottom p:hover {
     outline: none;
     border-bottom: none;
+}
+
+figure p.text-description {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.left-slide .lSSlideOuter .lSPager.lSGallery li {
+    background: #fff!important;
+}
+
+.component-item-expand {
+    min-height: 330px;
+    width: 209px;
+    box-sizing: border-box;
+    border: 1px solid #2f353a;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.component-item-expand img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.component-item-expand:hover {
+    outline: 3px solid #ccc;
+    border: 1px solid #ccc;
+}
+
+.component-item-expand h5 {
+    margin-bottom: 10px;
 }
