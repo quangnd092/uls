@@ -549,6 +549,8 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
     background: #fff;
     position: relative;
     min-height: 300px;
+    position: relative;
+    top: -117px;
 }
 
 #component-img {
