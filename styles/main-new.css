@@ -5229,7 +5229,7 @@ footer section.top {
 }
 
 footer section.top .list-navigation {
-    height: 150px
+    height: auto;
 }
 
 footer section.top .list-navigation ul li a {
@@ -7793,7 +7793,7 @@ nav .navbar-toggle.collapsed .icon-bar {
         margin-top: 10px
     }
     footer section.top .list-navigation {
-        height: 200px
+        height: auto;
     }
     section.bottom-content .container {
         top: 10px!important;
