@@ -5365,7 +5365,8 @@ footer section.bottom .copyright-content p {
 
 #content section.top-content .carousel-fade .carousel-inner .item {
     -webkit-transition-property: opacity;
-    transition-property: opacity
+    transition-property: opacity;
+    height:100%;
 }
 
 #content section.top-content .carousel-fade .carousel-inner .active.left,
