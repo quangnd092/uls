@@ -1097,4 +1097,9 @@ table.tablespecs {
     width: 100%!important;
     height:100%;
 }
+#content section.top-content .carousel-fade .carousel-inner .item > a > img {
+    width: 100%!important;
+    height:100%!important;
+}
+
 
