@@ -812,8 +812,8 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 }
 
 .bottom-content {
-    padding: 35px 0;
-    margin-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .bottom-content .wrap-list-bottom {
@@ -829,7 +829,7 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 .bottom-content .wrap-list-bottom .list-bottom .item {
     text-align: center;
     width: 165px;
-    height: 160px;
+    height: 108px;
     float: left;
     padding: 20px 10px;
     border-left: 1px solid #ddd
@@ -939,7 +939,7 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
     }
 }
 
-.portalbottom:hover {
+.portalbottom :hover {
     /*!--outline: 3px solid #ccc;*/
     border-bottom: 3px solid #ba0001;
     background: #f9f9f9;
@@ -1032,7 +1032,7 @@ section.list-portrait-products {
     cursor: pointer;
 }
 
-.portrait-product:hover {
+.portrait-product :hover {
     background-color: #FEFEFE;
     outline: 3px solid #CCCCCC;
     border: 1px solid #CCCCCC;
