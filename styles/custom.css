@@ -1141,15 +1141,6 @@ table.tablespecs {
     margin-bottom: 20px;
 }
 
-.explore {
-    height: 330px;
-    width: 300px;
-    box-sizing: border-box;
-    border: 1px solid #D4D4D4;
-    background-color: #F3F3F3;
-    margin-bottom: 20px;
-}
-
 .video-gallery-main img {
     width: 100%
 }
