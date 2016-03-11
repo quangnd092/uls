@@ -1153,3 +1153,71 @@ table.tablespecs {
 .video-gallery-main .caption h3 {
     padding-bottom: 10px;
 }
+.photo-video {
+    margin-top:30px;     
+}
+
+@media only screen and (max-width:490px) {
+    .photo-video img{
+    margin-bottom:30px;  
+    }
+    .photo-video{
+    text-align:center;  
+    }
+    .long-form {
+    padding:3px!important;
+}
+}
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+.long-form {
+    padding:20px;
+}
+.long-form-question {
+    background-color:#f6f1f0; 
+    width:100%; 
+    padding-top:20px; 
+    padding-left:20px; 
+    padding-bottom:1px; 
+    height:auto;
+}
+.long-form-container {
+    outline: 1px solid #ba0001; 
+    height:auto!important;
+    margin-bottom:60px;
+    
+}
+.long-form-btn {
+    text-align: center;
+    margin:20px;
+    
+}
