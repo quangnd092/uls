@@ -1225,13 +1225,14 @@ table.tablespecs {
     padding:10px;
     border-bottom: 1px solid #ccc;
 }
+
 .table-accessories{
     outline: 1px solid #ba0001;
 }
 .accessories-title-form {
-    text-align:center;
     font-weight:600;
 }
+
 .white-wrapper {
     box-sizing: border-box;
     margin-left: 20px;
