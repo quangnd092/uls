@@ -1232,3 +1232,24 @@ table.tablespecs {
     text-align:center;
     font-weight:600;
 }
+.white-wrapper {
+    box-sizing: border-box;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.news-info {
+    padding-left: 5px;
+    width: 100%;
+}
+.news-info h5 {
+    font-weight: bold;
+    font-size: 12px;
+}
+.news-description {
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+}
