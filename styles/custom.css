@@ -1221,3 +1221,14 @@ table.tablespecs {
     margin:20px;
     
 }
+.table-accessories td{
+    padding:10px;
+    border-bottom: 1px solid #ccc;
+}
+.table-accessories{
+    outline: 1px solid #ba0001;
+}
+.accessories-title-form {
+    text-align:center;
+    font-weight:600;
+}
