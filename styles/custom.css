@@ -1254,3 +1254,8 @@ table.tablespecs {
     font-size: 12px;
     font-weight: normal;
 }
+.carousel-indicators2 {
+    position: absolute;
+    top: 270px;
+    left: 715px;
+}
