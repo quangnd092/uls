@@ -1272,8 +1272,11 @@ table.tablespecs {
     filter: brightness(70%);
     
 }
-
-
+.portal-nav-imagesmall:hover {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+    
+}
 
 .fancy {
   line-height: 0.5;
@@ -1302,4 +1305,7 @@ table.tablespecs {
 .fancy span:after {
   left: 100%;
   margin-left: 15px;
+}
+.materialbtn {
+    width:268px;
 }
