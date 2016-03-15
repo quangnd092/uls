@@ -1259,3 +1259,47 @@ table.tablespecs {
     top: 270px;
     left: 715px;
 }
+.tech_portal_caption h5 {
+    color:#121212!important;
+    margin-top:20px;    
+}
+.tech_portal_image {
+    margin-top:20px;
+    
+}
+.tech_portal_image:hover {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+    
+}
+
+
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  top: 0;
+  width: 370px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
