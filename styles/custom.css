@@ -472,7 +472,14 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
 }
 
 .right-nav {
-    padding-left: 45px;
+    padding-left: 23px;
+    border-left: 1px solid #ccc;
+    margin-left: 26px;
+}
+@media only screen and (max-width:490px) {
+    .right-nav {
+        border-left: 0px solid #ccc;
+    }
 }
 
 .create-content {
@@ -1261,7 +1268,8 @@ table.tablespecs {
 }
 .tech_portal_caption h5 {
     color:#121212!important;
-    margin-top:20px;    
+    margin-top:20px;
+    font-weight: 400;
 }
 .tech_portal_image {
     margin-top:20px;
