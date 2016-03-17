@@ -809,6 +809,21 @@ section.list-portrait-portals .portrait-portal-container-4 .caption {
     display: none
 }
 
+.wrap-group-option3 .group-checked .text-more.collapsed .closecontent {
+    display: none
+}
+
+.wrap-group-option3 .group-checked .text-more .closecontent,
+.wrap-group-option3 .group-checked .text-more.collapsed .opencontent {
+    display: block
+}
+
+.wrap-group-option3 .group-checked .text-more .opencontent {
+    display: none
+}
+
+
+
 .main-content h3,
 .main-content h2 {
     margin-bottom: 18px;
