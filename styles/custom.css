@@ -1420,6 +1420,27 @@ section.step2 .wrap-step2 {
     margin-right: 20px;
     padding: 0px;
 }
+@media only screen and (max-width: 490px) {
+    .carousel-indicators2 {
+        position: absolute;
+        left: 201px!important;
+        top: 212px!important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .carousel-indicators2 {
+        position: absolute;
+        top: 300px;
+        left: 390px;
+    }
+}
+@media only screen and (max-width: 979px) {
+    .carousel-indicators2 {
+        position: absolute;
+        top: 246px;
+        left: 563px;
+    }
+}
 
 
 
