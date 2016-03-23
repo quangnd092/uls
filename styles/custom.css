@@ -1441,7 +1441,28 @@ section.step2 .wrap-step2 {
         left: 563px;
     }
 }
-
+section.step .wrap-step {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #cbcbcb;
+    position: relative;
+    padding-top: 8px;
+    padding-left: 20px;
+}
+.caret-right {
+  border-left: 4px solid @black;
+  border-right: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+.caret{
+border-color:#ffffff transparent transparent transparent;
+border-width:4px;
+border-style:solid;
+content: "";
+display:inline-block;
+}
 
 
 
