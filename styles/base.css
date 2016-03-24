@@ -1882,6 +1882,11 @@ dd {
         width: 750px
     }
 }
+@media only screen and (max-width:490px) {
+    .container {
+        padding-left: 7px!important;
+    }
+}
 
 .btn-group-vertical>.btn-group:after,
 .btn-toolbar:after,
