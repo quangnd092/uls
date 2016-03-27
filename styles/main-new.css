@@ -5755,6 +5755,64 @@ table.table-thead-vertical tbody {
     border: 1px solid #25292e
 }
 
+/*! tabbed style 2 */
+
+.tab-box2 .tab-content {    
+    padding: 4px;
+    min-height: auto;
+    overflow: auto;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.tab-box2 {    
+    margin-top:20px;
+}
+
+.tab-box2 .nav.nav-tabs2 li {
+    background-color: #fff;
+    border-left: 1px solid #d5d5d5
+}
+
+.tab-box2 .nav.nav-tabs2 li a {
+    border-radius: 0!important;
+    margin-right: 0px;    
+    color: #337ab7;
+    font-size: 18px;
+}
+
+.tab-box2 .nav.nav-tabs2 li.active {
+        
+}
+
+.tab-box2 .nav.nav-tabs2 li.active a {
+    color: #121212;
+    background-color: #fff;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    
+}
+
+.nav-tabs2>li>a {
+    margin-right: 2px;
+    line-height: 1.428571429;
+    border-radius: 4px 4px 0 0;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;    
+    background-color: #f8f8f8;
+}
+.nav-tabs2>li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+
+
+
+
+
 .filter-box,
 .search-top {
     padding: 20px;
@@ -5763,6 +5821,9 @@ table.table-thead-vertical tbody {
 
 @media only screen and (max-width:767px) {
     .tab-box .nav.nav-tabs li {
+        width: 100%
+    }
+    .tab-box2 .nav.nav-tabs2 li {
         width: 100%
     }
 }

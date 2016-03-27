@@ -1337,7 +1337,8 @@ table.tablespecs {
     margin-left: -41px
 }
 .platformlanding {
-    margin-left: 30px;
+    margin-left: 50px;
+    
 }
 section.step2 .wrap-step2 .tab-content .title-step2 span {
     margin-right: 30px;
@@ -1361,7 +1362,7 @@ section.step2 .wrap-step2 {
     border: 1px solid #cbcbcb;
     position: relative;
     padding-top: 19px;
-    padding: 30px;
+    padding: 0px;
     padding-bottom: 0px;
 }
 section.step2 .wrap-step2 {
@@ -1442,6 +1443,7 @@ section.step2 .wrap-step2 {
         left: 390px;
     }
 }
+
 @media only screen and (max-width: 979px) {
     .carousel-indicators2 {
         position: absolute;
@@ -1449,6 +1451,7 @@ section.step2 .wrap-step2 {
         left: 563px;
     }
 }
+
 section.step .wrap-step {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -1458,18 +1461,55 @@ section.step .wrap-step {
     padding-top: 8px;
     padding-left: 20px;
 }
+
 .caret-right {
   border-left: 4px solid @black;
   border-right: 0;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
 }
+
 .caret{
 border-color:#ffffff transparent transparent transparent;
 border-width:4px;
 border-style:solid;
 content: "";
 display:inline-block;
+}
+
+.button-platform2 {
+    margin:30px 0 20px; 
+    text-align:center
+    
+}
+.brochure {
+    margin-top:10px;
+    
+}
+
+.platform-help {
+    position: absolute;
+    width: 25px;
+    top: 41px;
+    left: 585px;
+}
+
+.platform-tab-content {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.platform-main-image {
+    margin-top:20px;
+    margin-left:10px;
+    
+}
+@media only screen and (max-width: 490px) {
+    .platform-main-image {
+        margin-top:30px;
+        text-align:center;
+        margin-left:50px;
+    }
 }
 
 
