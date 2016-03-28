@@ -1504,13 +1504,26 @@ display:inline-block;
     margin-left:10px;
     
 }
-@media only screen and (max-width: 490px) {
+@media only screen and (min-width: 320px) {
     .platform-main-image {
         margin-top:30px;
-        text-align:center;
-        margin-left:50px;
+        margin-left:50px!important;
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .platform-main-image { 
+        margin-top: 20px;
+        margin-left: 203px!important;
+        
+    }
+}
 
+@media only screen and (min-width: 992px) {
+    .platform-main-image { 
+        margin-top:20px;
+        margin-left:10px!important;
+        
+    }
+}
 
