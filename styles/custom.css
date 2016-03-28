@@ -1509,13 +1509,18 @@ display:inline-block;
         margin-top:30px;
         margin-left:50px!important;
     }
+    .platformlanding {
+        margin-left: 87px;
+}
 }
 
 @media only screen and (min-width: 768px) {
     .platform-main-image { 
         margin-top: 20px;
-        margin-left: 203px!important;
-        
+        margin-left: 203px!important;        
+    }
+    .platformlanding {
+        margin-left: 249px;
     }
 }
 
@@ -1523,7 +1528,9 @@ display:inline-block;
     .platform-main-image { 
         margin-top:20px;
         margin-left:10px!important;
-        
+    }
+    .platformlanding {
+        margin-left: 20px;
     }
 }
 
