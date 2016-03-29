@@ -1534,3 +1534,113 @@ display:inline-block;
     }
 }
 
+.home-title h3 {
+    font-size: 30px!important;
+}
+
+
+
+
+
+.showcase {
+	list-style: none;
+	padding: 0 0 0;
+	width: 370px;
+    height: 208px;
+}
+.showcase li {
+	float: left;
+	width: 370px;
+    height: 208px;
+	overflow: hidden;
+	margin: 0 13px 0 0;
+}
+.showcase a {
+	display: block;
+	width: 370px;
+    height: 208px;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+}
+.showcase a img {
+	width: 370px;
+    height: 208px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.showcase a:hover img {
+	width: 370px;
+    height: 208px;
+	left: 0;
+	top: 0;
+}
+.showcase a p {
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: -71px;
+    line-height: 20px;
+    display: block;
+    width: 370px;
+    cursor: pointer;
+    text-align: center;
+    height:70px;
+    
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    
+}
+.showcase a:hover p {
+	font-family: 'Open Sans', sans-serif;
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: -1px;
+    line-height: 20px;
+    display: block;
+    width: 370px;
+    cursor: pointer;
+    text-align: center;
+    height:auto;
+    padding-top:15px;
+    padding-bottom:15px;
+    
+}
+.showcase a h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #fff;
+        background: rgba(0, 0, 0, 0.72);
+    width: 370px;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    text-align: center;
+    padding-top: 6px;
+}
+.showcase a:hover h4 {
+	bottom:-65px;
+    background: rgba(0, 0, 0, 0.72);
+}
+
+
+
+
+

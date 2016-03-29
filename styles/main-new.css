@@ -5391,9 +5391,9 @@ footer section.bottom .copyright-content p {
 }
 
 #content section.home-title {
-    margin-bottom: 50px;
+        margin-bottom: 27px;
     position: relative;
-    padding-top: 25px;
+    padding-top: 42px;
 }
 
 #content section.home-title .container {
@@ -5406,7 +5406,7 @@ footer section.bottom .copyright-content p {
     height: 1px;
     box-sizing: border-box;
     width: 100%;
-    top: -11px;
+    top: -14px;
     border-top: 1px solid #d5d5d5;
     z-index: 90;
 }
@@ -5418,19 +5418,19 @@ footer section.bottom .copyright-content p {
 
 #content section.home-title h3 .ellipse-left {
     position: relative;
-    margin-right: -6px;
+    margin-right: -8px;
     z-index: 110;
 }
 
 #content section.home-title h3 .ellipse-right {
     position: relative;
-    margin-left: -6px;
+    margin-left: -8px;
     z-index: 110;
 }
 
 #content section.home-title h3 span {
     background: #fff;
-    padding: 0 10px
+    padding: 0 15px
 }
 
 @media only screen and (max-width:767px) {
@@ -5460,8 +5460,9 @@ footer section.bottom .copyright-content p {
 }
 
 #content section.list-portals section .portal .thumbnail .portal-image {
-    position: relative;
-    height: 174px
+        position: relative;
+    width: 370px;
+    height: 208px;
 }
 
 #content section.list-portals section .portal .thumbnail .caption h4 {
