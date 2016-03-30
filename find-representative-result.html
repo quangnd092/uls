@@ -36,10 +36,10 @@
 
         function initMap() {
             var map = new google.maps.Map(document.getElementById('map-canvas'), {
-                zoom: 2,
+                zoom: 16,
                 center: {
-                     lat: 46.411258, 
-                    lng:  30.513342
+                    lat: 33.6324452,
+                    lng: -111.9118411
                 }
             });
 
@@ -49,9 +49,8 @@
         // Data for the markers consisting of a name, a LatLng and a zIndex for the
         // order in which these markers should display on top of each other.
         var beaches = [
-      ['World Headquarters', 33.632463, -111.911863, 3],
-      ['Europe', 48.209601, 16.338412, 2],
-      ['Japan', 35.454928, 139.631354, 1],
+      ['World Headquarters', 33.632463, -111.911863, 3]
+
     ];
 
         function setMarkers(map) {
@@ -63,7 +62,7 @@
             // Origins, anchor positions and coordinates of the marker increase in the X
             // direction to the right and in the Y direction down.
             var image = {
-                url: 'images/page/google-icon-black.png',
+                url: 'images/page/google-icon.png',
             };
             // Shapes define the clickable region of the icon. The type defines an HTML
             // <area> element 'poly' which traces out a polygon as a series of X,Y points.
@@ -158,7 +157,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">History</a></li>
-                          <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Newsroom</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -230,8 +229,8 @@
         <section class="header-title red">
             <div class="container">
                 <div class="wrap-title">
-                    <h3 class="text-white">Contact Universal Laser Systems</h3>
-                    <h5 class="text-white">To speak with a Universal expert, call us or fill out the form below.</h5>
+                    <h3 class="text-white">Dale's Graphic System</h3>
+                    <h5 class="text-white">Authorizes ULS Representative</h5>
                 </div>
                 <div class="wrap-image">
                     <img src="images/contact/map_opacity.png">
@@ -248,35 +247,7 @@
         </section>
         <!-- the end -->
         <!-- start box list location -->
-        <section class="list-location">
-            <div class="container">
-                <article class="col-md-4 location">
-                    <img src="images/page/google-icon.png">
-                    <h4>World Headquarters</h4>
-                    <p>7845 East Paradise Lane</p>
-                    <p>Scottsdale, AZ 85260</p>
-                    <p>(800) 859-7033 U.S</p>
-                    <p>(480)483-1214 Global</p>
 
-                </article>
-                <article class="col-md-4 location">
-                    <img src="images/page/google-icon.png">
-                    <h4>Europe</h4>
-                    <p>Lerchenfelder Gürtel 43</p>
-                    <p>1160 Vienna, Austria </p>
-                    <p>+43 1-402-22-50 Europe</p>
-                </article>
-                <article class="col-md-4 location">
-                    <img src="images/page/google-icon.png">
-                    <h4>Japan</h4>
-                    <p>The Yokohama Landmark </p>
-                    <p>Tower 220-8115</p>
-                    <p>Yokohama, Japan</p>
-                    <p>+81 45-224-2279 Japan</p>
-                </article>
-                <div class="clearfix"></div>
-            </div>
-        </section>
         <!-- the end -->
         <!-- start box form -->
         <section class="form wrap-main-content container">
@@ -353,18 +324,31 @@
             </div>
 
             <div class="privacy-policy col-lg-4 col-md-4 col-sm-4 padding-none">
-                <div>
+                <section class="list-location">
+                    <div class="container">
+                        <article class="location">
+                            <img src="images/page/google-icon.png">
+                            <h4>Dale Graphic System</h4>
+                            <p>7845 East Paradise Lane</p>
+                            <p>Scottsdale, AZ 85260</p>
+                            <p>(800) 859-7033 U.S</p>
+                            <p>(480)483-1214 Global</p>
 
-                    <div>
-                        <a href="privacy-policy.html">
-                            <button class="btn btn-black btn-large">Privacy Policy</button>
-                        </a>
+                        </article>
+                        <article class="location">
+                            <img src="images/page/google-icon.png">
+                            <h4>Another Location</h4>
+                            <p>Huh What?</p>
+                            <p>Only one showing?</p>
+                            <p>Thats what she says</p>
+                            <p>ok...</p>
+
+                        </article>
+
+
+                        <div class="clearfix"></div>
                     </div>
-
-                    <div class="main-box">
-
-                    </div>
-                </div>
+                </section>
             </div>
 
             <div class="clearfix"></div>

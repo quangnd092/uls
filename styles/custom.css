@@ -1395,6 +1395,12 @@ section.step2 .wrap-step2 {
     width:243px;
         height: 306px;
 }
+.col-fixed-location {
+    width: auto!important;
+    height: 362px;
+    margin-right: 12px;
+    margin-top: 20px;
+}
 .col-min {
     /* custom min width */
     min-width:243px;

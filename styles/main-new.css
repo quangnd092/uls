@@ -6825,7 +6825,8 @@ article.list-text p.text {
 }
 
 section.step {
-    padding: 30px
+    padding: 30px;
+    padding-left: 27px!important;
 }
 
 section.step .wrap-step {
