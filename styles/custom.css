@@ -1676,3 +1676,40 @@ a.back-to-top {
 a:hover.back-to-top {
     background-color: #000;
 }
+
+.portal-side-nav {
+    text-align: center;
+    background-color: #1B1B1B;
+    color: #fff;
+    padding: 6px 0px 4px 28px;
+    font-size: 20px;
+    transition: all 0.3s;
+    border-bottom: 4px solid #000;
+}
+ 
+.portal-side-nav:hover {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 4px;
+    border-bottom: 4px solid #ba0001;
+}
+
+.text-portal-link  { 
+    text-decoration:none!important;
+}
+.text-portal-link h3::after {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal!important;
+    text-decoration: inherit;
+    float:right;
+    padding-right:10px;
+    color:#ba0001;
+}
+
+ .media2 {
+    margin-top: 15px;
+    list-style-type: none;
+}
