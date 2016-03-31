@@ -1685,6 +1685,7 @@ a:hover.back-to-top {
     font-size: 20px;
     transition: all 0.3s;
     border-bottom: 4px solid #000;
+    margin-left: 20px;
 }
  
 .portal-side-nav:hover {
