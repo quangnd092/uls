@@ -528,8 +528,8 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .pagination>li>span:hover {
     z-index: 2;
     color: #23527c;
-    background-color: #eee;
-    border-color: #ddd
+    background-color: #737373;
+    border-color: #A9A9A9;
 }
 
 .pagination>.active>a,
@@ -540,8 +540,8 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .pagination>.active>span:hover {
     z-index: 3;
     color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7;
+    background-color: #737373;
+    border-color: #A9A9A9;
     cursor: default
 }
 
