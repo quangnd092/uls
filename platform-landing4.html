@@ -44,6 +44,19 @@
             });
         });
     </script>
+    
+    <script type="text/javascript">
+        //  change image on nav tab
+        function changeIt(imageName, objName) {
+            var obj = document.getElementById(objName);
+
+            var imgTag = "<img src='" + imageName + "' border='0' />";
+
+            obj.innerHTML = imgTag;
+
+            return;
+        }
+    </script>
 
 
 

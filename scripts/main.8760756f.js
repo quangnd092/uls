@@ -84,16 +84,6 @@ $(document).ready(function () {
 
 });
 
-//  change image on nav tab
-function changeIt(imageName, objName) {
-    var obj = document.getElementById(objName);
-
-    var imgTag = "<img src='" + imageName + "' border='0' />";
-
-    obj.innerHTML = imgTag;
-
-    return;
-}
 
 //  back to top button
 $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
